@@ -1,0 +1,1671 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap");
+:root {
+  --xs: 576px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1200px;
+}
+
+.font-color {
+  background-color: black;
+}
+
+.secondary-color {
+  background-color: #ff70a6ff;
+}
+
+.accent-primary {
+  background-color: #70d6ffff;
+}
+
+.accent-secondary {
+  background-color: #ffd670ff;
+}
+
+.accent-tertiary {
+  background-color: #e9ff70ff;
+}
+
+.accent-quaternary {
+  background-color: #ff9770ff;
+}
+
+:root {
+  --unit: 0.75rem;
+  --base-font-size: 16px;
+  --border-width: 2px;
+  --font-color: black;
+  --secondary-color: #ff70a6ff;
+  --accent-primary: #70d6ffff;
+  --accent-secondary: #ffd670ff;
+  --accent-tertiary: #e9ff70ff;
+  --accent-quaternary: #ff9770ff;
+  --grid-column-count: 12;
+  --primary-font: Roboto, sans-serif;
+  --heading-font: Noto Sans, sans-serif;
+  --code-font: courier, monospace;
+  --layout-margin: 0;
+  --layout-padding: 0.75rem;
+  --column-count: 12;
+}
+
+:root {
+  --xs: 576px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1200px;
+}
+
+.font-color {
+  background-color: black;
+}
+
+.secondary-color {
+  background-color: #ff70a6ff;
+}
+
+.accent-primary {
+  background-color: #70d6ffff;
+}
+
+.accent-secondary {
+  background-color: #ffd670ff;
+}
+
+.accent-tertiary {
+  background-color: #e9ff70ff;
+}
+
+.accent-quaternary {
+  background-color: #ff9770ff;
+}
+
+:root {
+  --unit: 0.75rem;
+  --base-font-size: 16px;
+  --border-width: 2px;
+  --font-color: black;
+  --secondary-color: #ff70a6ff;
+  --accent-primary: #70d6ffff;
+  --accent-secondary: #ffd670ff;
+  --accent-tertiary: #e9ff70ff;
+  --accent-quaternary: #ff9770ff;
+  --grid-column-count: 12;
+  --primary-font: Roboto, sans-serif;
+  --heading-font: Noto Sans, sans-serif;
+  --code-font: courier, monospace;
+  --layout-margin: 0;
+  --layout-padding: 0.75rem;
+  --column-count: 12;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+:root {
+  --scale: 1.125;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+small,
+.small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+.font-scale-minor-second {
+  --scale: 1.067;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+.font-scale-minor-second small, .font-scale-minor-second .small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+.font-scale-major-second {
+  --scale: 1.125;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+.font-scale-major-second small, .font-scale-major-second .small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+.font-scale-minor-third {
+  --scale: 1.2;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+.font-scale-minor-third small, .font-scale-minor-third .small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+.font-scale-major-third {
+  --scale: 1.25;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+.font-scale-major-third small, .font-scale-major-third .small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+.font-scale-perfect-fourth {
+  --scale: 1.333;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+.font-scale-perfect-fourth small, .font-scale-perfect-fourth .small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+.font-scale-augmented-fourth {
+  --scale: 1.414;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+.font-scale-augmented-fourth small, .font-scale-augmented-fourth .small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+.font-scale-perfect-fifth {
+  --scale: 1.5;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+.font-scale-perfect-fifth small, .font-scale-perfect-fifth .small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+.font-scale-golden-ratio {
+  --scale: 1.618;
+  --h6: var(--base-font-size);
+  --h5: calc(var(--h6) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h1: calc(var(--h2) * var(--scale));
+}
+.font-scale-golden-ratio small, .font-scale-golden-ratio .small {
+  font-size: calc(var(--base) / var(--scale));
+}
+
+@media (max-width: 576px) {
+  .font-scale-xs-minor-second {
+    --scale: 1.067;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xs-minor-second small, .font-scale-xs-minor-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xs-major-second {
+    --scale: 1.125;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xs-major-second small, .font-scale-xs-major-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xs-minor-third {
+    --scale: 1.2;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xs-minor-third small, .font-scale-xs-minor-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xs-major-third {
+    --scale: 1.25;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xs-major-third small, .font-scale-xs-major-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xs-perfect-fourth {
+    --scale: 1.333;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xs-perfect-fourth small, .font-scale-xs-perfect-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xs-augmented-fourth {
+    --scale: 1.414;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xs-augmented-fourth small, .font-scale-xs-augmented-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xs-perfect-fifth {
+    --scale: 1.5;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xs-perfect-fifth small, .font-scale-xs-perfect-fifth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xs-golden-ratio {
+    --scale: 1.618;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xs-golden-ratio small, .font-scale-xs-golden-ratio .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+}
+@media (min-width: 576px) {
+  .font-scale-sm-minor-second {
+    --scale: 1.067;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-sm-minor-second small, .font-scale-sm-minor-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-sm-major-second {
+    --scale: 1.125;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-sm-major-second small, .font-scale-sm-major-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-sm-minor-third {
+    --scale: 1.2;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-sm-minor-third small, .font-scale-sm-minor-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-sm-major-third {
+    --scale: 1.25;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-sm-major-third small, .font-scale-sm-major-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-sm-perfect-fourth {
+    --scale: 1.333;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-sm-perfect-fourth small, .font-scale-sm-perfect-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-sm-augmented-fourth {
+    --scale: 1.414;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-sm-augmented-fourth small, .font-scale-sm-augmented-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-sm-perfect-fifth {
+    --scale: 1.5;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-sm-perfect-fifth small, .font-scale-sm-perfect-fifth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-sm-golden-ratio {
+    --scale: 1.618;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-sm-golden-ratio small, .font-scale-sm-golden-ratio .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+}
+@media (min-width: 768px) {
+  .font-scale-md-minor-second {
+    --scale: 1.067;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-md-minor-second small, .font-scale-md-minor-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-md-major-second {
+    --scale: 1.125;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-md-major-second small, .font-scale-md-major-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-md-minor-third {
+    --scale: 1.2;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-md-minor-third small, .font-scale-md-minor-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-md-major-third {
+    --scale: 1.25;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-md-major-third small, .font-scale-md-major-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-md-perfect-fourth {
+    --scale: 1.333;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-md-perfect-fourth small, .font-scale-md-perfect-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-md-augmented-fourth {
+    --scale: 1.414;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-md-augmented-fourth small, .font-scale-md-augmented-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-md-perfect-fifth {
+    --scale: 1.5;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-md-perfect-fifth small, .font-scale-md-perfect-fifth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-md-golden-ratio {
+    --scale: 1.618;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-md-golden-ratio small, .font-scale-md-golden-ratio .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+}
+@media (min-width: 992px) {
+  .font-scale-lg-minor-second {
+    --scale: 1.067;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-lg-minor-second small, .font-scale-lg-minor-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-lg-major-second {
+    --scale: 1.125;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-lg-major-second small, .font-scale-lg-major-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-lg-minor-third {
+    --scale: 1.2;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-lg-minor-third small, .font-scale-lg-minor-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-lg-major-third {
+    --scale: 1.25;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-lg-major-third small, .font-scale-lg-major-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-lg-perfect-fourth {
+    --scale: 1.333;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-lg-perfect-fourth small, .font-scale-lg-perfect-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-lg-augmented-fourth {
+    --scale: 1.414;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-lg-augmented-fourth small, .font-scale-lg-augmented-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-lg-perfect-fifth {
+    --scale: 1.5;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-lg-perfect-fifth small, .font-scale-lg-perfect-fifth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-lg-golden-ratio {
+    --scale: 1.618;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-lg-golden-ratio small, .font-scale-lg-golden-ratio .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+}
+@media (min-width: 1200px) {
+  .font-scale-xl-minor-second {
+    --scale: 1.067;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xl-minor-second small, .font-scale-xl-minor-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xl-major-second {
+    --scale: 1.125;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xl-major-second small, .font-scale-xl-major-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xl-minor-third {
+    --scale: 1.2;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xl-minor-third small, .font-scale-xl-minor-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xl-major-third {
+    --scale: 1.25;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xl-major-third small, .font-scale-xl-major-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xl-perfect-fourth {
+    --scale: 1.333;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xl-perfect-fourth small, .font-scale-xl-perfect-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xl-augmented-fourth {
+    --scale: 1.414;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xl-augmented-fourth small, .font-scale-xl-augmented-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xl-perfect-fifth {
+    --scale: 1.5;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xl-perfect-fifth small, .font-scale-xl-perfect-fifth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xl-golden-ratio {
+    --scale: 1.618;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xl-golden-ratio small, .font-scale-xl-golden-ratio .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+}
+@media (min-width: 1400px) {
+  .font-scale-xxl-minor-second {
+    --scale: 1.067;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xxl-minor-second small, .font-scale-xxl-minor-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xxl-major-second {
+    --scale: 1.125;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xxl-major-second small, .font-scale-xxl-major-second .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xxl-minor-third {
+    --scale: 1.2;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xxl-minor-third small, .font-scale-xxl-minor-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xxl-major-third {
+    --scale: 1.25;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xxl-major-third small, .font-scale-xxl-major-third .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xxl-perfect-fourth {
+    --scale: 1.333;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xxl-perfect-fourth small, .font-scale-xxl-perfect-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xxl-augmented-fourth {
+    --scale: 1.414;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xxl-augmented-fourth small, .font-scale-xxl-augmented-fourth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xxl-perfect-fifth {
+    --scale: 1.5;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xxl-perfect-fifth small, .font-scale-xxl-perfect-fifth .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+
+  .font-scale-xxl-golden-ratio {
+    --scale: 1.618;
+    --h6: var(--base-font-size);
+    --h5: calc(var(--h6) * var(--scale));
+    --h4: calc(var(--h5) * var(--scale));
+    --h3: calc(var(--h4) * var(--scale));
+    --h2: calc(var(--h3) * var(--scale));
+    --h1: calc(var(--h2) * var(--scale));
+  }
+  .font-scale-xxl-golden-ratio small, .font-scale-xxl-golden-ratio .small {
+    font-size: calc(var(--base) / var(--scale));
+  }
+}
+nav {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav ul li {
+  padding: var(--unit);
+  font-family: var(--heading-font);
+}
+nav ul li:first-child {
+  padding-left: 0;
+}
+nav ul li .branding {
+  font-weight: bold;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.grid {
+  --gap: calc(var(--unit) / 2);
+  --column-span: 1;
+  display: grid;
+  margin: var(--layout-margin);
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  grid-template-rows: auto 1fr;
+}
+.grid > * {
+  grid-column-end: span var(--column-span);
+}
+.grid .col-span-1 {
+  --column-span: 1;
+}
+.grid.grid-col-span-1 > * {
+  --column-span: 1;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-1 > * {
+    --column-span: 1;
+  }
+  .grid.col-xs-span-1 {
+    --column-span: 1;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-1 > * {
+    --column-span: 1;
+  }
+  .grid.col-sm-span-1 {
+    --column-span: 1;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-1 > * {
+    --column-span: 1;
+  }
+  .grid.col-md-span-1 {
+    --column-span: 1;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-1 > * {
+    --column-span: 1;
+  }
+  .grid.col-lg-span-1 {
+    --column-span: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-1 > * {
+    --column-span: 1;
+  }
+  .grid.col-xl-span-1 {
+    --column-span: 1;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-1 > * {
+    --column-span: 1;
+  }
+  .grid.col-xxl-span-1 {
+    --column-span: 1;
+  }
+}
+.grid .col-span-2 {
+  --column-span: 2;
+}
+.grid.grid-col-span-2 > * {
+  --column-span: 2;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-2 > * {
+    --column-span: 2;
+  }
+  .grid.col-xs-span-2 {
+    --column-span: 2;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-2 > * {
+    --column-span: 2;
+  }
+  .grid.col-sm-span-2 {
+    --column-span: 2;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-2 > * {
+    --column-span: 2;
+  }
+  .grid.col-md-span-2 {
+    --column-span: 2;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-2 > * {
+    --column-span: 2;
+  }
+  .grid.col-lg-span-2 {
+    --column-span: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-2 > * {
+    --column-span: 2;
+  }
+  .grid.col-xl-span-2 {
+    --column-span: 2;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-2 > * {
+    --column-span: 2;
+  }
+  .grid.col-xxl-span-2 {
+    --column-span: 2;
+  }
+}
+.grid .col-span-3 {
+  --column-span: 3;
+}
+.grid.grid-col-span-3 > * {
+  --column-span: 3;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-3 > * {
+    --column-span: 3;
+  }
+  .grid.col-xs-span-3 {
+    --column-span: 3;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-3 > * {
+    --column-span: 3;
+  }
+  .grid.col-sm-span-3 {
+    --column-span: 3;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-3 > * {
+    --column-span: 3;
+  }
+  .grid.col-md-span-3 {
+    --column-span: 3;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-3 > * {
+    --column-span: 3;
+  }
+  .grid.col-lg-span-3 {
+    --column-span: 3;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-3 > * {
+    --column-span: 3;
+  }
+  .grid.col-xl-span-3 {
+    --column-span: 3;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-3 > * {
+    --column-span: 3;
+  }
+  .grid.col-xxl-span-3 {
+    --column-span: 3;
+  }
+}
+.grid .col-span-4 {
+  --column-span: 4;
+}
+.grid.grid-col-span-4 > * {
+  --column-span: 4;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-4 > * {
+    --column-span: 4;
+  }
+  .grid.col-xs-span-4 {
+    --column-span: 4;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-4 > * {
+    --column-span: 4;
+  }
+  .grid.col-sm-span-4 {
+    --column-span: 4;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-4 > * {
+    --column-span: 4;
+  }
+  .grid.col-md-span-4 {
+    --column-span: 4;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-4 > * {
+    --column-span: 4;
+  }
+  .grid.col-lg-span-4 {
+    --column-span: 4;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-4 > * {
+    --column-span: 4;
+  }
+  .grid.col-xl-span-4 {
+    --column-span: 4;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-4 > * {
+    --column-span: 4;
+  }
+  .grid.col-xxl-span-4 {
+    --column-span: 4;
+  }
+}
+.grid .col-span-5 {
+  --column-span: 5;
+}
+.grid.grid-col-span-5 > * {
+  --column-span: 5;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-5 > * {
+    --column-span: 5;
+  }
+  .grid.col-xs-span-5 {
+    --column-span: 5;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-5 > * {
+    --column-span: 5;
+  }
+  .grid.col-sm-span-5 {
+    --column-span: 5;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-5 > * {
+    --column-span: 5;
+  }
+  .grid.col-md-span-5 {
+    --column-span: 5;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-5 > * {
+    --column-span: 5;
+  }
+  .grid.col-lg-span-5 {
+    --column-span: 5;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-5 > * {
+    --column-span: 5;
+  }
+  .grid.col-xl-span-5 {
+    --column-span: 5;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-5 > * {
+    --column-span: 5;
+  }
+  .grid.col-xxl-span-5 {
+    --column-span: 5;
+  }
+}
+.grid .col-span-6 {
+  --column-span: 6;
+}
+.grid.grid-col-span-6 > * {
+  --column-span: 6;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-6 > * {
+    --column-span: 6;
+  }
+  .grid.col-xs-span-6 {
+    --column-span: 6;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-6 > * {
+    --column-span: 6;
+  }
+  .grid.col-sm-span-6 {
+    --column-span: 6;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-6 > * {
+    --column-span: 6;
+  }
+  .grid.col-md-span-6 {
+    --column-span: 6;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-6 > * {
+    --column-span: 6;
+  }
+  .grid.col-lg-span-6 {
+    --column-span: 6;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-6 > * {
+    --column-span: 6;
+  }
+  .grid.col-xl-span-6 {
+    --column-span: 6;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-6 > * {
+    --column-span: 6;
+  }
+  .grid.col-xxl-span-6 {
+    --column-span: 6;
+  }
+}
+.grid .col-span-7 {
+  --column-span: 7;
+}
+.grid.grid-col-span-7 > * {
+  --column-span: 7;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-7 > * {
+    --column-span: 7;
+  }
+  .grid.col-xs-span-7 {
+    --column-span: 7;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-7 > * {
+    --column-span: 7;
+  }
+  .grid.col-sm-span-7 {
+    --column-span: 7;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-7 > * {
+    --column-span: 7;
+  }
+  .grid.col-md-span-7 {
+    --column-span: 7;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-7 > * {
+    --column-span: 7;
+  }
+  .grid.col-lg-span-7 {
+    --column-span: 7;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-7 > * {
+    --column-span: 7;
+  }
+  .grid.col-xl-span-7 {
+    --column-span: 7;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-7 > * {
+    --column-span: 7;
+  }
+  .grid.col-xxl-span-7 {
+    --column-span: 7;
+  }
+}
+.grid .col-span-8 {
+  --column-span: 8;
+}
+.grid.grid-col-span-8 > * {
+  --column-span: 8;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-8 > * {
+    --column-span: 8;
+  }
+  .grid.col-xs-span-8 {
+    --column-span: 8;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-8 > * {
+    --column-span: 8;
+  }
+  .grid.col-sm-span-8 {
+    --column-span: 8;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-8 > * {
+    --column-span: 8;
+  }
+  .grid.col-md-span-8 {
+    --column-span: 8;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-8 > * {
+    --column-span: 8;
+  }
+  .grid.col-lg-span-8 {
+    --column-span: 8;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-8 > * {
+    --column-span: 8;
+  }
+  .grid.col-xl-span-8 {
+    --column-span: 8;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-8 > * {
+    --column-span: 8;
+  }
+  .grid.col-xxl-span-8 {
+    --column-span: 8;
+  }
+}
+.grid .col-span-9 {
+  --column-span: 9;
+}
+.grid.grid-col-span-9 > * {
+  --column-span: 9;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-9 > * {
+    --column-span: 9;
+  }
+  .grid.col-xs-span-9 {
+    --column-span: 9;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-9 > * {
+    --column-span: 9;
+  }
+  .grid.col-sm-span-9 {
+    --column-span: 9;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-9 > * {
+    --column-span: 9;
+  }
+  .grid.col-md-span-9 {
+    --column-span: 9;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-9 > * {
+    --column-span: 9;
+  }
+  .grid.col-lg-span-9 {
+    --column-span: 9;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-9 > * {
+    --column-span: 9;
+  }
+  .grid.col-xl-span-9 {
+    --column-span: 9;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-9 > * {
+    --column-span: 9;
+  }
+  .grid.col-xxl-span-9 {
+    --column-span: 9;
+  }
+}
+.grid .col-span-10 {
+  --column-span: 10;
+}
+.grid.grid-col-span-10 > * {
+  --column-span: 10;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-10 > * {
+    --column-span: 10;
+  }
+  .grid.col-xs-span-10 {
+    --column-span: 10;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-10 > * {
+    --column-span: 10;
+  }
+  .grid.col-sm-span-10 {
+    --column-span: 10;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-10 > * {
+    --column-span: 10;
+  }
+  .grid.col-md-span-10 {
+    --column-span: 10;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-10 > * {
+    --column-span: 10;
+  }
+  .grid.col-lg-span-10 {
+    --column-span: 10;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-10 > * {
+    --column-span: 10;
+  }
+  .grid.col-xl-span-10 {
+    --column-span: 10;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-10 > * {
+    --column-span: 10;
+  }
+  .grid.col-xxl-span-10 {
+    --column-span: 10;
+  }
+}
+.grid .col-span-11 {
+  --column-span: 11;
+}
+.grid.grid-col-span-11 > * {
+  --column-span: 11;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-11 > * {
+    --column-span: 11;
+  }
+  .grid.col-xs-span-11 {
+    --column-span: 11;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-11 > * {
+    --column-span: 11;
+  }
+  .grid.col-sm-span-11 {
+    --column-span: 11;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-11 > * {
+    --column-span: 11;
+  }
+  .grid.col-md-span-11 {
+    --column-span: 11;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-11 > * {
+    --column-span: 11;
+  }
+  .grid.col-lg-span-11 {
+    --column-span: 11;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-11 > * {
+    --column-span: 11;
+  }
+  .grid.col-xl-span-11 {
+    --column-span: 11;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-11 > * {
+    --column-span: 11;
+  }
+  .grid.col-xxl-span-11 {
+    --column-span: 11;
+  }
+}
+.grid .col-span-12 {
+  --column-span: 12;
+}
+.grid.grid-col-span-12 > * {
+  --column-span: 12;
+}
+@media (max-width: 576px) {
+  .grid.grid-xs-col-span-12 > * {
+    --column-span: 12;
+  }
+  .grid.col-xs-span-12 {
+    --column-span: 12;
+  }
+}
+@media (min-width: 576px) {
+  .grid.grid-sm-col-span-12 > * {
+    --column-span: 12;
+  }
+  .grid.col-sm-span-12 {
+    --column-span: 12;
+  }
+}
+@media (min-width: 768px) {
+  .grid.grid-md-col-span-12 > * {
+    --column-span: 12;
+  }
+  .grid.col-md-span-12 {
+    --column-span: 12;
+  }
+}
+@media (min-width: 992px) {
+  .grid.grid-lg-col-span-12 > * {
+    --column-span: 12;
+  }
+  .grid.col-lg-span-12 {
+    --column-span: 12;
+  }
+}
+@media (min-width: 1200px) {
+  .grid.grid-xl-col-span-12 > * {
+    --column-span: 12;
+  }
+  .grid.col-xl-span-12 {
+    --column-span: 12;
+  }
+}
+@media (min-width: 1400px) {
+  .grid.grid-xxl-col-span-12 > * {
+    --column-span: 12;
+  }
+  .grid.col-xxl-span-12 {
+    --column-span: 12;
+  }
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: var(--layout-margin);
+  font-size: var(--base-font-size);
+  font-family: var(--font);
+  color: var(--font-color);
+}
+
+header, section, article, aside, footer, nav, div, p, footer {
+  margin: var(--layout-margin);
+  padding: var(--layout-padding);
+}
+
+:root {
+  --base-shadow-size: 1px;
+  --shadow-scale: 1.333;
+  --shadow1: var(--base-shadow-size);
+  --shadow2: calc(var(--shadow1) * var(--shadow-scale));
+  --shadow3: calc(var(--shadow2) * var(--shadow-scale));
+  --shadow4: calc(var(--shadow3) * var(--shadow-scale));
+  --shadow5: calc(var(--shadow4) * var(--shadow-scale));
+  --shadow6: calc(var(--shadow5) * var(--shadow-scale));
+  --shadow7: calc(var(--shadow6) * var(--shadow-scale));
+  --shadow8: calc(var(--shadow7) * var(--shadow-scale));
+  --shadow9: calc(var(--shadow8) * var(--shadow-scale));
+  --shadow10: calc(var(--shadow9) * var(--shadow-scale));
+}
+
+:root {
+  --primary-x-offset: 1px;
+  --primary-blur: calc(var(--primary-x-offset) * 2);
+  --base-strength-multiplier: 0.1;
+  --strength: 1;
+  --alpha: calc(var(--strength) * var(--base-strength-multiplier));
+  --secondary-x-offset: calc(var(--primary-x-offset) * 1.5);
+  --secondary-blur: calc(var(--secondary-x-offset) * 2);
+  --seconday-alpha: calc(var(--alpha) * 1.5);
+  --r: 0;
+  --g: 0;
+  --b: 0;
+}
+
+.shadow-1 {
+  --primary-x-offset: var(--shadow1);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-2 {
+  --primary-x-offset: var(--shadow2);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-3 {
+  --primary-x-offset: var(--shadow3);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-4 {
+  --primary-x-offset: var(--shadow4);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-5 {
+  --primary-x-offset: var(--shadow5);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-6 {
+  --primary-x-offset: var(--shadow6);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-7 {
+  --primary-x-offset: var(--shadow7);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-8 {
+  --primary-x-offset: var(--shadow8);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-9 {
+  --primary-x-offset: var(--shadow9);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+.shadow-10 {
+  --primary-x-offset: var(--shadow10);
+  box-shadow: 0 var(--primary-x-offset) var(--primary-blur) rgba(var(--r), var(--g), var(--b), var(--alpha)), 0 var(--secondary-x-offset) var(--secondary-blur) rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+}
+
+/*# sourceMappingURL=roKit.css.map */

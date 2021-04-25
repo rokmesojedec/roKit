@@ -1,0 +1,60 @@
+@use "./../variables" as var;
+@use "scales";
+
+
+@function get-scale-value($base, $scale, $multiplier: false) {
+    $scaledValue: $base;
+    @if $multiplier {
+        @for $index from 1 through $multiplier {
+            $scaledValue: $scaledValue * $scale;
+        }
+    }
+    @return $scaledValue;
+}
+
+@mixin CSS-calc-font-scale(
+    $scale,
+    $base: null,
+    $class: ":root",
+    $scaleLinkMultiplier: false,
+    $headingMultiplier: false
+) {
+    @if variable-exists("base") {
+        $font-size: get-scale-value($base, $scale, $headingMultiplier);
+    }
+    #{$class} {
+        @if variable-exists("font-size") {
+            --base-font-size: #{$font-size};
+        }
+        --scale: #{$scale};
+        @for $index from 6 through 1 {
+            @if $index == 6 {
+                --h#{$index}: var(--base-font-size);
+            } @else {
+                $prev: $index + 1;
+                --h#{$index}: calc(var(--h#{$prev}) * var(--scale));
+            }
+        }
+
+        @if $class != ":root" {
+            small,.small {
+                font-size: calc(var(--base) / var(--scale));
+            }
+        }
+    }
+
+    @if $class == ":root" {
+        @for $index from 6 through 1 {
+            h#{$index} {
+                font-size: var(--h#{$index});
+            }
+        }
+
+        small,
+        .small {
+            font-size: calc(var(--base) / var(--scale));
+        }
+    }
+
+ 
+}

@@ -1,0 +1,27 @@
+nav {
+    margin: 0;
+    padding: 0;
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+            &:first-child{
+                padding-left:0;
+            }
+            .branding{
+                font-weight: bold;
+            }
+            padding: var(--unit);
+            font: {
+                family: var(--heading-font);
+            }
+            a{
+                text: {
+                    decoration: none
+                }
+            }
+        }
+    }
+}

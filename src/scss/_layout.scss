@@ -1,0 +1,42 @@
+@import "components/nav";
+
+.grid {
+    --gap: calc(var(--unit) / 2);
+    --column-span: 1;
+
+    display: grid;
+    margin: var(--layout-margin);
+    grid: {
+        gap: var(--gap);
+    }
+    grid-template-columns: repeat(var(--column-count), 1fr);
+    grid-template-rows: auto 1fr;
+
+    & > * {
+        grid-column-end: span var(--column-span);
+    }
+
+    $columnWidth: 1, 2, 3, 4, 6, 12;
+    $sizes: "xs", "sm", "md", "lg", "xl", "xxl";
+
+    @for $colSpan from 1 through $column-count {
+        & .col-span-#{$colSpan} {
+            --column-span: #{$colSpan};
+        }
+        &.grid-col-span-#{$colSpan} {
+            & > * {
+                --column-span: #{$colSpan};
+            }
+        }
+        @include for-each-breakpoint() using ($breakpoint){
+            &.grid-#{$breakpoint}-col-span-#{$colSpan} {
+                & > * {
+                    --column-span: #{$colSpan};
+                }
+            }
+            &.col-#{$breakpoint}-span-#{$colSpan} {
+                --column-span: #{$colSpan};
+            }
+        }
+    }
+}

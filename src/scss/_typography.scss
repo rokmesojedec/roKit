@@ -1,0 +1,28 @@
+@use "components/fontscale" as fontscale;
+@use "variables" as var;
+@use "components/scales";
+
+$default-scale: scales.$major-second;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: {
+        family: var(--heading-font);
+    }
+}
+
+@include fontscale.CSS-calc-font-scale($default-scale, var.$base-font-size);
+
+@each $scale, $value in scales.$map {
+    @include fontscale.CSS-calc-font-scale($value, var.$base-font-size, ".font-scale-" + $scale);
+}
+
+@include for-each-breakpoint() using ($breakpoint) {
+    @each $scale, $value in scales.$map {
+        @include fontscale.CSS-calc-font-scale($value, var.$base-font-size, ".font-scale-" +$breakpoint + "-"+ $scale);
+    }
+}

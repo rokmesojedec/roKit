@@ -1,0 +1,60 @@
+@mixin box_shadow($level) {
+    @if $level == 1 {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    } @else if $level == 2 {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    } @else if $level == 3 {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    } @else if $level == 4 {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    } @else if $level == 5 {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+}
+
+@mixin scaled-shadows($scale, $levels, $class: ":root", $start-size: 1px) {
+
+    #{$class} {
+        --base-shadow-size: #{$start-size};
+        --shadow-scale: #{$scale};
+        @for $index from 1 through $levels {
+            @if $index == 1 {
+                --shadow#{$index}: var(--base-shadow-size);
+            } @else {
+                $prev: $index - 1;
+                --shadow#{$index}: calc(var(--shadow#{$prev}) * var(--shadow-scale));
+            }
+        }
+    }
+
+    @if $class == ":root" {
+        :root{
+            --primary-x-offset: 1px;
+            --primary-blur: calc(var(--primary-x-offset) * 2);
+            --base-strength-multiplier: 0.1;
+            --strength: 1;
+            --alpha: calc(var(--strength) * var(--base-strength-multiplier));
+            --secondary-x-offset: calc(var(--primary-x-offset) * 1.5);
+            --secondary-blur: calc(var(--secondary-x-offset) * 2);
+            --seconday-alpha: calc(var(--alpha) * 1.5);
+            --r: 0;
+            --g: 0;
+            --b: 0;
+        }
+        @for $index from 1 through $levels {
+            .shadow-#{$index} {
+                --primary-x-offset: var(--shadow#{$index});
+                box-shadow: 0
+                        var(--primary-x-offset)
+                        var(--primary-blur)
+                        rgba(var(--r), var(--g), var(--b), var(--alpha)),
+                        0
+                        var(--secondary-x-offset)
+                        var(--secondary-blur)
+                        rgba(var(--r), var(--g), var(--b), var(--seconday-alpha));
+            }
+        }
+    }
+}
+
+@include scaled-shadows(1.333, 10);

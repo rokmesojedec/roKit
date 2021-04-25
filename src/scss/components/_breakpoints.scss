@@ -1,0 +1,40 @@
+$xs:  576px;
+$sm:  576px;
+$md:  768px;
+$lg:  992px;
+$xl:  1200px;
+$xxl: 1400px;
+
+$breakpoint-map: ("xs": $xs, "sm": $sm, "md": $md, "lg": $lg, "xl": $xl, "xxl": $xxl);
+$breakpoint-bound: ("xs": "max", "sm": "min", "md": "min", "lg": "min", "xl": "min", "xxl": "min");
+
+:root{
+    --xs:  #{$xs};
+    --sm:  #{$sm};
+    --md:  #{$md};
+    --lg:  #{$lg};
+    --xl:  #{$xl};
+    --xxl: #{$xl};
+}
+
+@mixin for-each-breakpoint(){
+    @each $breakpoint, $size in $breakpoint-map{
+        @include breakpoint($breakpoint){
+            @content($breakpoint);
+        }
+    }
+}
+
+@mixin breakpoint($breakpoint) {
+    @media(#{get-breakpoint-bound($breakpoint)}-width: #{get-breakpoint-value($breakpoint)}){
+        @content;
+    }    
+}
+
+@function get-breakpoint-value($size){
+   @return map.get($breakpoint-map, $size);
+}
+
+@function get-breakpoint-bound($size){
+    @return map.get($breakpoint-bound, $size);
+ }

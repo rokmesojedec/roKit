@@ -1,0 +1,21 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0;
+    margin: var(--layout-margin);;
+    font: {
+        size: var(--base-font-size);
+        family: var(--font);
+    }
+    color: var(--font-color);
+}
+
+header, section, article, aside, footer, nav, div, p, footer {
+
+    margin: var(--layout-margin);
+    padding: var(--layout-padding);
+
+}
