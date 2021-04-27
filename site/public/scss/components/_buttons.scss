@@ -1,0 +1,51 @@
+.btn {
+    position: relative;
+    padding: calc(var(--unit) * 0.75) calc(var(--unit) * 2);
+    color: white;
+    font-weight: 300;
+    border: none;
+    font-family: var(--primary-font);
+    font-size: calc(var(--unit) * 1.6);
+    background: var(--secondary-color);
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    text-decoration: none;
+    span {
+        vertical-align: bottom;
+        font-size: calc(var(--unit) * 1.6);
+    }
+
+    &:hover:after,
+    &:active:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#79797948, #00000036);
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:hover:after {
+        animation: button-hover 0.35s ease;
+    }
+
+    &:active {
+        transform: translate(1px, 1px);
+        box-shadow: none !important;
+    }
+}
+
+@keyframes button-hover {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}

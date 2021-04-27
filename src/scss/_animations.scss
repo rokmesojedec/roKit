@@ -1,0 +1,36 @@
+@use "sass:math";
+
+@mixin animation-series($name, $startCondition, $endCondition, $levels: 10, $animation-length: 0.4s, $delay-increment: 0.3){
+    @for $i from 0 through $levels {
+        @keyframes #{$name}-delay-#{$i} {
+            $percentage: math.floor((($i / (($animation-length / 1s) + $i))) * 100%);
+            from {
+                opacity: 0;
+                transform: #{$startCondition};
+                animation-timing-function: ease-in;
+            }
+            #{$percentage} {
+                opacity: 0;
+                transform: #{$startCondition};
+                animation-timing-function: ease-out;
+            }
+            to {
+                opacity: 1;
+                transform: #{$endCondition};
+            }
+        }
+        .#{$name}-delay-#{$i} {
+            animation: #{$name}-delay-#{$i} $animation-length + ($i * $delay-increment * 1s);
+        }
+    }
+    
+    @for $i from 0 through $levels {
+        .children-#{$name}{
+            & > *:nth-child(#{$i}){
+                animation: #{$name}-delay-#{$i} $animation-length + ($i * $delay-increment * 1s)
+            }
+        }
+    }
+}
+
+
