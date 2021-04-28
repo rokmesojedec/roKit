@@ -11,8 +11,21 @@ $layout-padding: $unit;
 $column-count: 12;
 $base-font-size: 14px;
 $grid-column-count: 12;
+
+// Shadow Variables
+//-----------------------------------------------------------------------//
+
 $shadow-scale: 1.333;
 $shadow-levels: 10;
+
+// Animation Variables
+//-----------------------------------------------------------------------//
+
+$animation-delay-steps: 10;
+$animation-base-length: 0.4s; // must be in seconds
+$animation-fast-delay-multiplier: 0.65;
+$animation-slow-delay-multiplier: 0.45;
+$animation-delay-multiplier: 0.25;
 
 @mixin root-variables(){
     --unit: #{$unit};

@@ -6,7 +6,12 @@ $mindaro: #e9ff70ff;
 $green: rgb(98, 189, 75);
 $black: black;
 $gray: #8f8f8f;
+$dark-blue: #001b33;
 
+// Theme Variables
+//-----------------------------------------------------------------------//
+
+// Modifiy to create custom theme
 $muted: $gray;
 $text-color: $black;
 $primary: $baby-blue;
@@ -14,10 +19,12 @@ $secondary: $light-salmon;
 $success: $green;
 $warning: $mindaro;
 $danger: $french-pink;
+$code-color: $dark-blue;
 
 @mixin root-colors(){
     --text-color: #{$text-color};
     --text-muted-color: #{$muted};
+    --code-color: #{$code-color};
     --primary-color: #{$primary};
     --secondary-color: #{$secondary};
     --success-color: #{$success};
@@ -25,9 +32,12 @@ $danger: $french-pink;
     --danger-color: #{$danger};
 }
 
-$colors: "primary", "secondary", "success", "warning", "danger";
+// list of color classes - gradient combinations are generated from 1 on 1 combinations of colors defined below 
+// below classes should correspond to CSS variables defined in root-colors mixins
+$colors: "primary", "secondary", "success", "warning", "danger", "code";
 
-@mixin color-classes(){
+// generates text and background classes 
+@mixin color-classes($colors: $colors){
     @each $color in $colors{
         .text-#{$color}{
             color: var(--#{$color}-color);
@@ -36,16 +46,19 @@ $colors: "primary", "secondary", "success", "warning", "danger";
             background-color: var(--#{$color}-color);
         }
     }
-    
     .text-color {
         color: var(--text-color);
     }
-
+    .text-white {
+        color: white;
+    }
     .text-muted {
         color: var(--text-muted-color);
     }
-
     .no-background{
         background: none;
+    }
+    .white{
+        background-color: white;
     }
 }

@@ -1,7 +1,5 @@
-@use "components/fontscale" as fontscale;
 @use "components/scales";
-
-$default-scale: scales.$major-second;
+@import "components/fontscale";
 
 h1,
 h2,
@@ -14,7 +12,7 @@ h6 {
     }
 }
 
-.muted{
+.muted {
     color: var(--font-muted-color);
 }
 
@@ -30,38 +28,45 @@ h6 {
     text-align: right;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 code {
     background: var(--primary-color);
-    color: var(--text-muted-colo);
-    font-family: var( --code-font);
-    padding: calc(var( --unit) * 1.5);
+    color: var(--code-color);
+    font-family: var(--code-font);
+    padding: calc(var(--unit) * 4);
     white-space: pre-wrap;
     display: block;
-    font-weight: bold;
 }
 
 $font-weights: 100, 300, 400, 500, 700;
 
-@each $weight in $font-weights{
-    .weight-#{$weight}{
+@each $weight in $font-weights {
+    .weight-#{$weight} {
         font-weight: #{$weight};
     }
 }
 
 @for $i from 1 through 10 {
-    .letter-spacing-#{$i}{
+    .letter-spacing-#{$i} {
         letter-spacing: #{$i}px;
     }
 }
 
-@include fontscale.CSS-calc-font-scale($default-scale);
+@include typography-rules();
 
 @each $scale, $value in scales.$map {
-    @include fontscale.CSS-calc-font-scale($value, ".font-scale-" + $scale);
+    .font-scale-#{$scale} {
+        @include root-typography($value);
+    }
 }
 
 @include for-each-breakpoint() using ($breakpoint) {
     @each $scale, $value in scales.$map {
-        @include fontscale.CSS-calc-font-scale($value, ".font-scale-" +$breakpoint + "-"+ $scale);
+        .font-scale-#{$breakpoint}-#{$scale} {
+            @include root-typography($value);
+        }
     }
 }

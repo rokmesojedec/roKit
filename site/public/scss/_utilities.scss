@@ -68,7 +68,6 @@ $levels: 10;
         .m-#{$letter}-#{$i} {
             margin-#{$direction}: $unit * $i;
         }
- 
     }
 }
 
@@ -119,7 +118,6 @@ $levels: 10;
             margin-bottom: $unit * $i;
         }
     }
-
     @each $direction, $letter in $directions {
         @for $i from 0 through $levels {
             .p-#{$breakpoint}-#{$letter}-#{$i} {
@@ -137,12 +135,10 @@ $levels: 10;
         height: #{$i}vh;
     }
 }
-
 .center {
     margin-left: auto;
     margin-right: auto;
 }
-
 .full-width{
     width: 100%;
 }

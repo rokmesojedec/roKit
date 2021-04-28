@@ -1,13 +1,20 @@
-$xs:  576px;
-$sm:  576px;
-$md:  768px;
-$lg:  992px;
-$xl:  1200px;
-$xxl: 1400px;
+// Breakpoint Variables
+//-----------------------------------------------------------------------//
+$xs:  576px;  // xs  = less than 576px
+$sm:  576px;  // sm  = more than 576px
+$md:  768px;  // md  = more than 768px
+$lg:  992px;  // lg  = more than 992px
+$xl:  1200px; // xl  = more than 1200px
+$xxl: 1400px; // xxl = more than 1400px
+
+// If you are going to add / remove breakpoints
+// Make sure to reflect additional or fewer breakpoints in maps below 
 
 $breakpoint-map: ("xs": $xs, "sm": $sm, "md": $md, "lg": $lg, "xl": $xl, "xxl": $xxl);
 $breakpoint-bound: ("xs": "max", "sm": "min", "md": "min", "lg": "min", "xl": "min", "xxl": "min");
 
+// loops through each breakpoint in breakpoint-map list
+// this mixin is used to create all the responive rule sets in the framework
 @mixin for-each-breakpoint(){
     @each $breakpoint, $size in $breakpoint-map{
         @include breakpoint($breakpoint){
@@ -16,6 +23,7 @@ $breakpoint-bound: ("xs": "max", "sm": "min", "md": "min", "lg": "min", "xl": "m
     }
 }
 
+// Creates breakpoint @media with appropriate max / min width rule
 @mixin breakpoint($breakpoint) {
     @media(#{get-breakpoint-bound($breakpoint)}-width: #{get-breakpoint-value($breakpoint)}){
         @content;

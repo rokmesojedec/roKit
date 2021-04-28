@@ -1,6 +1,16 @@
 @import "components/nav";
 @import "components/buttons";
 
+.fixed {
+    position: fixed;
+}
+
+@include for-each-breakpoint() using ($breakpoint) {
+    .fixed-#{$breakpoint} {
+        position: fixed;
+    }
+}
+
 .grid {
     --gap: calc(var(--unit) / 2);
     --column-span: 1;
@@ -19,7 +29,6 @@
 
     $columnWidth: 1, 2, 3, 4, 6, 12;
     $sizes: "xs", "sm", "md", "lg", "xl", "xxl";
-
 
     @for $colSpan from 1 through $column-count {
         &.grid-col-span-#{$colSpan} {
@@ -53,5 +62,10 @@
             --column-span: #{$colSpan};
         }
     }
+}
 
+@for $i from 1 to 100 {
+    .z-#{$i}{
+        z-index: #{$i};
+    }
 }

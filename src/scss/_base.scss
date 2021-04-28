@@ -1,3 +1,12 @@
+@use "components/fontscale" as font;
+:root{
+    @include root-colors();
+    @include root-variables();
+    @include root-buttons();
+    @include root-shadows();
+    @include font.root-typography();
+}
+
 *, ::before, ::after{
     box-sizing: border-box;
 }
@@ -18,20 +27,22 @@ header, section, article, aside, footer, nav, div, p, footer {
     padding: var(--layout-padding);
 }
 
-@include scaled-shadows($shadow-scale, $shadow-levels);
+@include shadow-scales($shadow-scale, $shadow-levels);
+@include utility-shadow("box-shadow",  "box");
+@include utility-shadow("text-shadow", "text");
 @include color-classes();
 
-@include animation-series("slide-down",  "translateY(-1rem)", "translateY(0)", 10, 0.4s, 0.45);
-@include animation-series("slide-up",    "translateY(1rem)",  "translateY(0)", 10, 0.4s, 0.45);
-@include animation-series("slide-left",  "translateX(-1rem)", "translateX(0)", 10, 0.4s, 0.45);
-@include animation-series("slide-right", "translateX(1rem)",  "translateX(0)", 10, 0.4s, 0.45);
+@include animation-series("slide-down",  "translateY(-1rem)", "translateY(0)", $animation-delay-steps, $animation-base-length, $animation-slow-delay-multiplier);
+@include animation-series("slide-up",    "translateY(1rem)",  "translateY(0)", $animation-delay-steps, $animation-base-length, $animation-slow-delay-multiplier);
+@include animation-series("slide-left",  "translateX(-1rem)", "translateX(0)", $animation-delay-steps, $animation-base-length, $animation-slow-delay-multiplier);
+@include animation-series("slide-right", "translateX(1rem)",  "translateX(0)", $animation-delay-steps, $animation-base-length, $animation-slow-delay-multiplier);
 
-@include animation-series("slide-down-fast",  "translateY(-1rem)", "translateY(0)", 10, 0.4s, 0.25);
-@include animation-series("slide-up-fast",    "translateY(1rem)",  "translateY(0)", 10, 0.4s, 0.25);
-@include animation-series("slide-left-fast",  "translateX(-1rem)", "translateX(0)", 10, 0.4s, 0.25);
-@include animation-series("slide-right-fast", "translateX(1rem)",  "translateX(0)", 10, 0.4s, 0.25);
+@include animation-series("slide-down-fast",  "translateY(-1rem)", "translateY(0)", $animation-delay-steps, $animation-base-length, $animation-delay-multiplier);
+@include animation-series("slide-up-fast",    "translateY(1rem)",  "translateY(0)", $animation-delay-steps, $animation-base-length, $animation-delay-multiplier);
+@include animation-series("slide-left-fast",  "translateX(-1rem)", "translateX(0)", $animation-delay-steps, $animation-base-length, $animation-delay-multiplier);
+@include animation-series("slide-right-fast", "translateX(1rem)",  "translateX(0)", $animation-delay-steps, $animation-base-length, $animation-delay-multiplier);
 
-@include animation-series("slide-down-slow",  "translateY(-1rem)", "translateY(0)", 10, 0.4s, 0.65);
-@include animation-series("slide-up-slow",    "translateY(1rem)",  "translateY(0)", 10, 0.4s, 0.65);
-@include animation-series("slide-left-slow",  "translateX(-1rem)", "translateX(0)", 10, 0.4s, 0.65);
-@include animation-series("slide-right-slow", "translateX(1rem)",  "translateX(0)", 10, 0.4s, 0.65);
+@include animation-series("slide-down-slow",  "translateY(-1rem)", "translateY(0)", $animation-delay-steps, $animation-base-length, $animation-fast-delay-multiplier);
+@include animation-series("slide-up-slow",    "translateY(1rem)",  "translateY(0)", $animation-delay-steps, $animation-base-length, $animation-fast-delay-multiplier);
+@include animation-series("slide-left-slow",  "translateX(-1rem)", "translateX(0)", $animation-delay-steps, $animation-base-length, $animation-fast-delay-multiplier);
+@include animation-series("slide-right-slow", "translateX(1rem)",  "translateX(0)", $animation-delay-steps, $animation-base-length, $animation-fast-delay-multiplier);

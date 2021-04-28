@@ -1,19 +1,45 @@
+// Button Sizes
+//-----------------------------------------------------------------------//
+$button-sizes: "xxs", "xs", "sm", "md", "lg", "xl", "xxl"; // Do not modify
+
+@mixin root-buttons 
+    ($decrement-factor: 0.8,   // modifier for smaller button sizes
+     $increment-factor: 1.25,  // modifier for bigger button sizes
+     $btn-border-radius: 4px,  // global button border radius
+     $btn-font-weight: 300)    // global button font weight
+{   
+    --btn-decrement-factor: #{$decrement-factor};
+    --btn-increment-factor: #{$increment-factor};
+    --btn-font-weight: #{$btn-font-weight};
+    --btn-xxs: calc(var(--btn-xs) * var(--btn-decrement-factor));
+    --btn-xs: calc(var(--btn-sm) * var(--btn-decrement-factor));
+    --btn-sm: calc(var(--btn-md) * var(--btn-decrement-factor));
+    --btn-md: var(--base-font-size);
+    --btn-lg: calc(var(--btn-md) * var(--btn-increment-factor));
+    --btn-xl: calc(var(--btn-lg) * var(--btn-increment-factor));
+    --btn-xxl: calc(var(--btn-xl) * var(--btn-increment-factor));
+    --btn-font-size: var(--btn-md);
+    --btn-border-radius: #{$btn-border-radius};
+}
+
 .btn {
     position: relative;
-    padding: calc(var(--unit) * 0.75) calc(var(--unit) * 2);
-    color: white;
-    font-weight: 300;
+    padding: calc(var(--btn-font-size) * 0.75) calc(var(--btn-font-size) * 2);
+    color: var(--text-color);
+    font-weight: var(--btn-font-weight);
     border: none;
+    border-radius: var(--btn-border-radius);
     font-family: var(--primary-font);
-    font-size: calc(var(--unit) * 1.6);
-    background: var(--secondary-color);
+    font-size: var(--btn-font-size);
+    background: white;
     cursor: pointer;
     user-select: none;
     display: inline-block;
     text-decoration: none;
+    
     span {
         vertical-align: bottom;
-        font-size: calc(var(--unit) * 1.6);
+        font-size: var(--btn-font-size);
     }
 
     &:hover:after,
@@ -29,6 +55,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        border-radius: var(--btn-border-radius);
     }
 
     &:hover:after {
@@ -38,6 +65,20 @@
     &:active {
         transform: translate(1px, 1px);
         box-shadow: none !important;
+    }
+
+    @each $size in $button-sizes {
+        &.btn-#{$size}{
+            --btn-font-size: var(--btn-#{$size});
+        }
+    }
+
+    @include for-each-breakpoint() using ($breakpoint) {
+        @each $size in $button-sizes {
+            &.btn-#{$breakpoint}-#{$size}{
+                --btn-font-size: var(--btn-#{$size});
+            }
+        }
     }
 }
 

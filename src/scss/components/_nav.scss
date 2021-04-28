@@ -1,4 +1,5 @@
 @use "breakpoints";
+
 nav {
     margin: 0;
     padding: 0;
@@ -19,20 +20,25 @@ nav {
             .branding{
                 font-weight: bold;
                 font-size: 200%;
+                &:hover, & a:hover{
+                    text-decoration: none;
+                }
             }
             padding: var(--unit);
             font: {
                 family: var(--heading-font);
             }
             a{
+                color: var(--text-color);
                 text: {
                     decoration: none
+                }
+                &:hover{
+                    text-decoration: underline;
                 }
             }
         }
     }
-
-
     @include for-each-breakpoint() using ($breakpoint) {
         &.nav-#{$breakpoint}{
             ul{

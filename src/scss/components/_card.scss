@@ -1,62 +1,6 @@
 .card{
     padding: var(--unit);
-}
-@mixin scaled-shadows($scale, $levels, $class: ":root", $start-size: 1px) {
-
-    #{$class} {
-        --base-shadow-size: #{$start-size};
-        --shadow-scale: #{$scale};
-        --base-strength-multiplier: 0.1;
-        --base-blur-multiplier: 1.5;
-
-        @for $index from 1 through $levels {
-            @if $index == 1 {
-                --shadow#{$index}: var(--base-shadow-size);
-                --shadow#{$index}-strength-multiplier: var(--base-strength-multiplier);
-                --shadow#{$index}-blur-multiplier: var(--base-strength-multiplier);
-
-            } @else {
-                $prev: $index - 1;
-                --shadow#{$index}: calc(var(--shadow#{$prev}) * var(--shadow-scale));
-                --shadow#{$index}-strength-multiplier: calc(var(--shadow#{$prev}-strength-multiplier) * var(--shadow-scale));
-                --shadow#{$index}-blur-multiplier: calc(var(--shadow#{$prev}-blur-multiplier) * var(--shadow-scale));
-
-            }
-        }
-    }
-
-    @if $class == ":root" {
-        :root{
-            --primary-x-offset: 1px;
-            --base-blur-multiplier: 1;
-            --primary-blur: calc(var(--primary-x-offset) * var(--base-blur-multiplier));
-            --base-strength-multiplier: 0.17;
-            --strength: 1;
-            --alpha: calc(var(--strength) * var(--base-strength-multiplier));
-            --secondary-x-offset: calc(var(--primary-x-offset) * 2.3);
-            --secondary-blur: calc(var(--primary-x-offset) * var(--base-blur-multiplier) * 2);
-            --seconday-alpha: calc(var(--alpha) * 0.15);
-            --r: 0;
-            --g: 0;
-            --b: 0;
-        }
-        @for $index from 1 through $levels {
-            .shadow-#{$index} {
-                --primary-x-offset: var(--shadow#{$index});
-                --primary-blur: calc(var(--shadow#{$index}) * var(--shadow#{$index}-blur-multiplier));
-                --base-strength-multiplier:var(--shadow#{$index}-strength-multiplier);
-                box-shadow: 
-                        var(--primary-x-offset)
-                        var(--primary-x-offset)
-                        var(--primary-blur)
-                        rgba(var(--r), var(--g), var(--b), var(--alpha)),
-                        calc(var(--primary-x-offset) * -1)
-                        calc(var(--primary-x-offset) * -1)
-                        var(--primary-blur)
-                        rgba(var(--r), var(--g), var(--b), var(--seconday-alpha))
-            }
-        }
+    h1, h2, h3, h4, h5, h6{
+        padding: 0 var(--unit);
     }
 }
-
-@include scaled-shadows(1.333, 10);
