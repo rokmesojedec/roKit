@@ -1,29 +1,31 @@
 @use "sass:math";
 
-@mixin animation-series($name, $startTransform, $endTransform, $levels: 20, $animation-length: 0.4s, $delay-increment: 0.3){
+@mixin map-to-rules($map){
+    @each $rule, $value in $map{
+        #{$rule}: $value;
+    }
+}
+
+@mixin animation-series($name, $startRuleMap, $endRuleMap, $levels: 20, $animation-length: 0.4s, $delay-increment: 0.3){
     @for $i from 0 through $levels {
         @keyframes #{$name}-delay-#{$i} {
             $percentage: math.floor((($i / (($animation-length / 1s) + $i))) * 100%);
             from {
-                opacity: 0;
-                transform: #{$startTransform};
+                @include map-to-rules($startRuleMap);
                 animation-timing-function: ease-in;
             }
             #{$percentage} {
-                opacity: 0;
-                transform: #{$startTransform};
+                @include map-to-rules($startRuleMap);
                 animation-timing-function: ease-out;
             }
             to {
-                opacity: 1;
-                transform: #{$endTransform};
+                @include map-to-rules($endRuleMap);
             }
         }
         .#{$name}-delay-#{$i} {
             animation: #{$name}-delay-#{$i} $animation-length + ($i * $delay-increment * 1s);
         }
     }
-    
     @for $i from 0 through $levels {
         .children-#{$name}{
             & > *:nth-child(#{$i}){

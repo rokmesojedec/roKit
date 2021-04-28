@@ -12727,6 +12727,930 @@ header, section, article, aside, footer, nav, div, p, footer {
   animation: slide-right-slow-delay-10 7s;
 }
 
+@keyframes animate-text-shadow-left-delay-0 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  0% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-0 {
+  animation: animate-text-shadow-left-delay-0 0.5s;
+}
+
+@keyframes animate-text-shadow-left-delay-1 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  66% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-1 {
+  animation: animate-text-shadow-left-delay-1 0.95s;
+}
+
+@keyframes animate-text-shadow-left-delay-2 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-2 {
+  animation: animate-text-shadow-left-delay-2 1.4s;
+}
+
+@keyframes animate-text-shadow-left-delay-3 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  85% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-3 {
+  animation: animate-text-shadow-left-delay-3 1.85s;
+}
+
+@keyframes animate-text-shadow-left-delay-4 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  88% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-4 {
+  animation: animate-text-shadow-left-delay-4 2.3s;
+}
+
+@keyframes animate-text-shadow-left-delay-5 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-5 {
+  animation: animate-text-shadow-left-delay-5 2.75s;
+}
+
+@keyframes animate-text-shadow-left-delay-6 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  92% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-6 {
+  animation: animate-text-shadow-left-delay-6 3.2s;
+}
+
+@keyframes animate-text-shadow-left-delay-7 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-7 {
+  animation: animate-text-shadow-left-delay-7 3.65s;
+}
+
+@keyframes animate-text-shadow-left-delay-8 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  94% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-8 {
+  animation: animate-text-shadow-left-delay-8 4.1s;
+}
+
+@keyframes animate-text-shadow-left-delay-9 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  94% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-9 {
+  animation: animate-text-shadow-left-delay-9 4.55s;
+}
+
+@keyframes animate-text-shadow-left-delay-10 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  95% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: -0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-left-delay-10 {
+  animation: animate-text-shadow-left-delay-10 5s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(0) {
+  animation: animate-text-shadow-left-delay-0 0.5s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(1) {
+  animation: animate-text-shadow-left-delay-1 0.95s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(2) {
+  animation: animate-text-shadow-left-delay-2 1.4s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(3) {
+  animation: animate-text-shadow-left-delay-3 1.85s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(4) {
+  animation: animate-text-shadow-left-delay-4 2.3s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(5) {
+  animation: animate-text-shadow-left-delay-5 2.75s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(6) {
+  animation: animate-text-shadow-left-delay-6 3.2s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(7) {
+  animation: animate-text-shadow-left-delay-7 3.65s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(8) {
+  animation: animate-text-shadow-left-delay-8 4.1s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(9) {
+  animation: animate-text-shadow-left-delay-9 4.55s;
+}
+
+.children-animate-text-shadow-left > *:nth-child(10) {
+  animation: animate-text-shadow-left-delay-10 5s;
+}
+
+@keyframes animate-text-shadow-right-delay-0 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  0% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-0 {
+  animation: animate-text-shadow-right-delay-0 0.5s;
+}
+
+@keyframes animate-text-shadow-right-delay-1 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  66% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-1 {
+  animation: animate-text-shadow-right-delay-1 0.95s;
+}
+
+@keyframes animate-text-shadow-right-delay-2 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-2 {
+  animation: animate-text-shadow-right-delay-2 1.4s;
+}
+
+@keyframes animate-text-shadow-right-delay-3 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  85% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-3 {
+  animation: animate-text-shadow-right-delay-3 1.85s;
+}
+
+@keyframes animate-text-shadow-right-delay-4 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  88% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-4 {
+  animation: animate-text-shadow-right-delay-4 2.3s;
+}
+
+@keyframes animate-text-shadow-right-delay-5 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-5 {
+  animation: animate-text-shadow-right-delay-5 2.75s;
+}
+
+@keyframes animate-text-shadow-right-delay-6 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  92% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-6 {
+  animation: animate-text-shadow-right-delay-6 3.2s;
+}
+
+@keyframes animate-text-shadow-right-delay-7 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-7 {
+  animation: animate-text-shadow-right-delay-7 3.65s;
+}
+
+@keyframes animate-text-shadow-right-delay-8 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  94% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-8 {
+  animation: animate-text-shadow-right-delay-8 4.1s;
+}
+
+@keyframes animate-text-shadow-right-delay-9 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  94% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-9 {
+  animation: animate-text-shadow-right-delay-9 4.55s;
+}
+
+@keyframes animate-text-shadow-right-delay-10 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  95% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0.1em 0 1px #0000001f;
+  }
+}
+.animate-text-shadow-right-delay-10 {
+  animation: animate-text-shadow-right-delay-10 5s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(0) {
+  animation: animate-text-shadow-right-delay-0 0.5s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(1) {
+  animation: animate-text-shadow-right-delay-1 0.95s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(2) {
+  animation: animate-text-shadow-right-delay-2 1.4s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(3) {
+  animation: animate-text-shadow-right-delay-3 1.85s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(4) {
+  animation: animate-text-shadow-right-delay-4 2.3s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(5) {
+  animation: animate-text-shadow-right-delay-5 2.75s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(6) {
+  animation: animate-text-shadow-right-delay-6 3.2s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(7) {
+  animation: animate-text-shadow-right-delay-7 3.65s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(8) {
+  animation: animate-text-shadow-right-delay-8 4.1s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(9) {
+  animation: animate-text-shadow-right-delay-9 4.55s;
+}
+
+.children-animate-text-shadow-right > *:nth-child(10) {
+  animation: animate-text-shadow-right-delay-10 5s;
+}
+
+@keyframes animate-text-shadow-down-delay-0 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  0% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-0 {
+  animation: animate-text-shadow-down-delay-0 0.5s;
+}
+
+@keyframes animate-text-shadow-down-delay-1 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  66% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-1 {
+  animation: animate-text-shadow-down-delay-1 0.95s;
+}
+
+@keyframes animate-text-shadow-down-delay-2 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-2 {
+  animation: animate-text-shadow-down-delay-2 1.4s;
+}
+
+@keyframes animate-text-shadow-down-delay-3 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  85% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-3 {
+  animation: animate-text-shadow-down-delay-3 1.85s;
+}
+
+@keyframes animate-text-shadow-down-delay-4 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  88% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-4 {
+  animation: animate-text-shadow-down-delay-4 2.3s;
+}
+
+@keyframes animate-text-shadow-down-delay-5 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-5 {
+  animation: animate-text-shadow-down-delay-5 2.75s;
+}
+
+@keyframes animate-text-shadow-down-delay-6 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  92% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-6 {
+  animation: animate-text-shadow-down-delay-6 3.2s;
+}
+
+@keyframes animate-text-shadow-down-delay-7 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-7 {
+  animation: animate-text-shadow-down-delay-7 3.65s;
+}
+
+@keyframes animate-text-shadow-down-delay-8 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  94% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-8 {
+  animation: animate-text-shadow-down-delay-8 4.1s;
+}
+
+@keyframes animate-text-shadow-down-delay-9 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  94% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-9 {
+  animation: animate-text-shadow-down-delay-9 4.55s;
+}
+
+@keyframes animate-text-shadow-down-delay-10 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  95% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-down-delay-10 {
+  animation: animate-text-shadow-down-delay-10 5s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(0) {
+  animation: animate-text-shadow-down-delay-0 0.5s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(1) {
+  animation: animate-text-shadow-down-delay-1 0.95s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(2) {
+  animation: animate-text-shadow-down-delay-2 1.4s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(3) {
+  animation: animate-text-shadow-down-delay-3 1.85s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(4) {
+  animation: animate-text-shadow-down-delay-4 2.3s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(5) {
+  animation: animate-text-shadow-down-delay-5 2.75s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(6) {
+  animation: animate-text-shadow-down-delay-6 3.2s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(7) {
+  animation: animate-text-shadow-down-delay-7 3.65s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(8) {
+  animation: animate-text-shadow-down-delay-8 4.1s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(9) {
+  animation: animate-text-shadow-down-delay-9 4.55s;
+}
+
+.children-animate-text-shadow-down > *:nth-child(10) {
+  animation: animate-text-shadow-down-delay-10 5s;
+}
+
+@keyframes animate-text-shadow-up-delay-0 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  0% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-0 {
+  animation: animate-text-shadow-up-delay-0 0.5s;
+}
+
+@keyframes animate-text-shadow-up-delay-1 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  66% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-1 {
+  animation: animate-text-shadow-up-delay-1 0.95s;
+}
+
+@keyframes animate-text-shadow-up-delay-2 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-2 {
+  animation: animate-text-shadow-up-delay-2 1.4s;
+}
+
+@keyframes animate-text-shadow-up-delay-3 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  85% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-3 {
+  animation: animate-text-shadow-up-delay-3 1.85s;
+}
+
+@keyframes animate-text-shadow-up-delay-4 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  88% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-4 {
+  animation: animate-text-shadow-up-delay-4 2.3s;
+}
+
+@keyframes animate-text-shadow-up-delay-5 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-5 {
+  animation: animate-text-shadow-up-delay-5 2.75s;
+}
+
+@keyframes animate-text-shadow-up-delay-6 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  92% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-6 {
+  animation: animate-text-shadow-up-delay-6 3.2s;
+}
+
+@keyframes animate-text-shadow-up-delay-7 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-7 {
+  animation: animate-text-shadow-up-delay-7 3.65s;
+}
+
+@keyframes animate-text-shadow-up-delay-8 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  94% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-8 {
+  animation: animate-text-shadow-up-delay-8 4.1s;
+}
+
+@keyframes animate-text-shadow-up-delay-9 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  94% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-9 {
+  animation: animate-text-shadow-up-delay-9 4.55s;
+}
+
+@keyframes animate-text-shadow-up-delay-10 {
+  from {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-in;
+  }
+  95% {
+    text-shadow: 0 0 1px #0000001f;
+    animation-timing-function: ease-out;
+  }
+  to {
+    text-shadow: 0 -0.1em 1px #0000001f;
+  }
+}
+.animate-text-shadow-up-delay-10 {
+  animation: animate-text-shadow-up-delay-10 5s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(0) {
+  animation: animate-text-shadow-up-delay-0 0.5s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(1) {
+  animation: animate-text-shadow-up-delay-1 0.95s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(2) {
+  animation: animate-text-shadow-up-delay-2 1.4s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(3) {
+  animation: animate-text-shadow-up-delay-3 1.85s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(4) {
+  animation: animate-text-shadow-up-delay-4 2.3s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(5) {
+  animation: animate-text-shadow-up-delay-5 2.75s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(6) {
+  animation: animate-text-shadow-up-delay-6 3.2s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(7) {
+  animation: animate-text-shadow-up-delay-7 3.65s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(8) {
+  animation: animate-text-shadow-up-delay-8 4.1s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(9) {
+  animation: animate-text-shadow-up-delay-9 4.55s;
+}
+
+.children-animate-text-shadow-up > *:nth-child(10) {
+  animation: animate-text-shadow-up-delay-10 5s;
+}
+
 h1,
 h2,
 h3,
