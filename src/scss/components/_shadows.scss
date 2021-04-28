@@ -60,7 +60,7 @@ $shadow-levels: 10;
     }
 }
 
-@mixin utility-shadow($name, $type: "text", $color: #0000001f, $distance: 10px, $blur: 1px){
+@mixin utility-shadow($name, $type: "text", $color: #0000001f, $distance: 0.1em, $blur: 1px){
     .#{$name}-top-left     { #{$type}-shadow: -#{$distance} -#{$distance} #{$blur} #{$color}; }
     .#{$name}-top-right    { #{$type}-shadow:  #{$distance} -#{$distance} #{$blur} #{$color}; }
     .#{$name}-top          { #{$type}-shadow: 0px -#{$distance} #{$blur} #{$color}; }
