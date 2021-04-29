@@ -135,6 +135,32 @@ $levels: 10;
         height: #{$i}vh;
     }
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.top { top: 0; }
+.bottom { bottom: 0; }
+.left { left: 0; }
+.right { right: 0; }
+
+@include for-each-breakpoint() using ($breakpoint) {
+    .#{$breakpoint}-hide{
+        display: none;
+    }
+}
+
+@include for-each-breakpoint() using ($breakpoint) {
+    .#{$breakpoint}-show{
+        display: block;
+    }
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;

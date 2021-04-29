@@ -63,10 +63,31 @@ $font-weights: 100, 300, 400, 500, 700;
     }
 }
 
+$text-alignments: "left", "right", "center", "justify";
+@each $alignment in $text-alignments {
+    .text-#{$alignment} {
+        text-align: #{$alignment};
+    }
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+
 @include for-each-breakpoint() using ($breakpoint) {
     @each $scale, $value in scales.$map {
         .font-scale-#{$breakpoint}-#{$scale} {
             @include root-typography($value);
         }
     }
+    @each $alignment in $text-alignments {
+        .text-#{$breakpoint}-#{$alignment} {
+            text-align: #{$alignment};
+        }
+    }
 }
+
+

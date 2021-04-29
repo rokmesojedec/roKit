@@ -43,7 +43,7 @@ $shadow-levels: 10;
 
 @mixin shadow-scales($scale: $shadow-scale, $levels: $shadow-levels) {
     @for $index from 1 through $levels {
-        .shadow-#{$index} {
+        .shadow-#{$index}, .children-shadow-#{$index} > * {
             --primary-x-offset: var(--shadow#{$index});
             --primary-blur: calc(var(--shadow#{$index}) * var(--shadow#{$index}-blur-multiplier));
             --base-strength-multiplier:var(--shadow#{$index}-strength-multiplier);
@@ -56,6 +56,22 @@ $shadow-levels: 10;
                     calc(var(--primary-x-offset) * -1)
                     var(--primary-blur)
                     rgba(var(--r), var(--g), var(--b), var(--seconday-alpha))
+        } 
+        @include for-each-breakpoint() using ($breakpoint) {
+            .shadow-#{$breakpoint}-#{$index}, .children-#{$breakpoint}-shadow-#{$index} > * {
+                --primary-x-offset: var(--shadow#{$index});
+                --primary-blur: calc(var(--shadow#{$index}) * var(--shadow#{$index}-blur-multiplier));
+                --base-strength-multiplier:var(--shadow#{$index}-strength-multiplier);
+                box-shadow: 
+                        var(--primary-x-offset)
+                        var(--primary-x-offset)
+                        var(--primary-blur)
+                        rgba(var(--r), var(--g), var(--b), var(--alpha)),
+                        calc(var(--primary-x-offset) * -1)
+                        calc(var(--primary-x-offset) * -1)
+                        var(--primary-blur)
+                        rgba(var(--r), var(--g), var(--b), var(--seconday-alpha))
+            } 
         }
     }
 }
@@ -65,8 +81,8 @@ $shadow-levels: 10;
     .#{$name}-top-right    { #{$type}-shadow:  #{$distance} -#{$distance} #{$blur} #{$color}; }
     .#{$name}-top          { #{$type}-shadow: 0px -#{$distance} #{$blur} #{$color}; }
     .#{$name}-bottom       { #{$type}-shadow: 0px  #{$distance} #{$blur} #{$color}; } 
-    .#{$name}-bottom-left  { #{$type}-shadow: -#{$distance} -#{$distance} #{$blur} #{$color}; }
-    .#{$name}-bottom-right { #{$type}-shadow:  #{$distance} -#{$distance} #{$blur} #{$color}; }
+    .#{$name}-bottom-left  { #{$type}-shadow: -#{$distance} #{$distance} #{$blur} #{$color}; }
+    .#{$name}-bottom-right { #{$type}-shadow:  #{$distance} #{$distance} #{$blur} #{$color}; }
     .#{$name}-left         { #{$type}-shadow: -#{$distance} 0px #{$blur} #{$color}; }
     .#{$name}-right        { #{$type}-shadow:  #{$distance} 0px #{$blur} #{$color}; }
 }

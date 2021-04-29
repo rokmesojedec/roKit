@@ -7,6 +7,7 @@ $green: rgb(98, 189, 75);
 $black: black;
 $gray: #8f8f8f;
 $dark-blue: #001b33;
+$dark-transparent: 0000001f;
 
 // Theme Variables
 //-----------------------------------------------------------------------//
@@ -20,6 +21,7 @@ $success: $green;
 $warning: $mindaro;
 $danger: $french-pink;
 $code-color: $dark-blue;
+$overlay-color: $dark-transparent;
 
 @mixin root-colors(){
     --text-color: #{$text-color};
@@ -30,11 +32,13 @@ $code-color: $dark-blue;
     --success-color: #{$success};
     --warning-color: #{$warning};
     --danger-color: #{$danger};
+    --overlay-color: #{$overlay-color};
 }
 
 // list of color classes - gradient combinations are generated from 1 on 1 combinations of colors defined below 
 // below classes should correspond to CSS variables defined in root-colors mixins
 $colors: "primary", "secondary", "success", "warning", "danger", "code";
+$overlay-degrees: ("top": 0, "right": 90deg, "bottom": 180deg, "left": 270deg);
 
 // generates text and background classes 
 @mixin color-classes($colors: $colors){
@@ -46,6 +50,13 @@ $colors: "primary", "secondary", "success", "warning", "danger", "code";
             background-color: var(--#{$color}-color);
         }
     }
+
+    @each $position, $degrees in $overlay-degrees {
+        .overlay-gradient-#{$position} {
+            background: linear-gradient($degrees, var(--overlay-color), #ffffff00);
+        }
+    }
+
     .text-color {
         color: var(--text-color);
     }
