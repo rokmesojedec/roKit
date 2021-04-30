@@ -1,0 +1,33 @@
+a {
+    text-decoration: none;
+    //color: var(--text-color);
+    display: inline-block;
+    position: relative;
+    color: var(--code-color);
+    transition: color 0.3s;
+
+    &::after{
+        z-index: -1;
+        $underline-height: 0.25em;
+        content: "";
+        height: $underline-height;
+        width: 104%;
+        position: absolute;
+        bottom: -0.1em; 
+        left: -2%;
+        background-color: var(--primary-color);
+        transition: height 0.3s, bottom 0.3s, background-color 0.3s;
+    }
+
+    &:hover::after{
+        height: 1.5em;
+        bottom: -0.2em;
+    }
+
+
+    &:active::after{
+        height: 1.5em;
+        bottom: -0.2em;
+        background-color: var(--secondary-color);
+    }
+}

@@ -1,11 +1,11 @@
 @use "theme";
 
-@each $color in theme.$colors {
-    @each $color2 in theme.$colors {
+@each $color, $text in theme.$bgcolors-textcolor-map {
+    @each $color2, $text in theme.$bgcolors-textcolor-map {
         @if $color != $color2 {
             .gradient-#{$color}-#{$color2} {
                 background: var(--#{$color}-color);
-                background: linear-gradient(30deg, var(--#{$color}-color), var(--#{$color2}-color));
+                background: linear-gradient($default-gradient-rotation, var(--#{$color}-color), var(--#{$color2}-color));
             }
         }
     }

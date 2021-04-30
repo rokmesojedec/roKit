@@ -20,7 +20,8 @@ nav {
             .branding{
                 font-weight: bold;
                 font-size: 200%;
-                &:hover, & a:hover{
+      
+                &:hover, a:hover{
                     text-decoration: none;
                 }
             }
@@ -29,6 +30,9 @@ nav {
                 family: var(--heading-font);
             }
             a{
+                &::after, &:hover::after, &:active::after{
+                    display: none;
+                }
                 color: var(--text-color);
                 text: {
                     decoration: none

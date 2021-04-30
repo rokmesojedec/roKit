@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ro:Kit - Web Responsive Design Framework</title>
     <link rel="stylesheet" href="css/roKit.css">
+    <!-- <link href="css/highlight/ascetic.css"> -->
     <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
@@ -15,27 +16,29 @@
             height: calc(100vh);
         }
     </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
 </head>
 
-<body class="font-scale-xs-minor-second 
-             font-scale-major-second 
+<body class="font-scale-minor-second 
+             font-scale-sm-major-second 
              font-scale-xl-minor-third 
-             children-p-x-10 
-             children-p-x-xs-4">
+             children-p-x-sm-10 
+             children-p-x-4">
     <section class="p-0">
         <div class="jumbo 
-                    golden-ratio-right 
                     font-scale-minor-third 
                     font-scale-md-perfect-fourth 
                     font-scale-xl-augmented-fourth 
-                    gradient-primary-secondary 
+                    gradient-primary-dark-secondary 
                     slide-left-delay-2
                     p-x-4 
                     p-y-6 
                     vh-100 
                     shadow-6
                     ">
-            <div class="overlay overlay-gradient-top"></div>
+            <!-- <div class="overlay overlay-gradient-top"></div> -->
             <div class="content text-right">
                 <h1 class="m-y-0 slide-down-delay-3"><span
                         class="weight-100 text-color text-shadow-right animate-text-shadow-right-delay-4">let's</span>
@@ -45,7 +48,7 @@
                 <h6 class="m-t-0 m-b-2 letter-spacing-2 weight-100 text-color slide-down-delay-5"><small>No JS. No
                         hassle.</small></h6>
                 <span class="slide-up-delay-6">
-                    <a class="btn btn-xl-lg animate-box-shadow-top-left-delay-7 box-shadow-top-left"
+                    <a class="btn btn-xl-lg animate-box-shadow-top-left-delay-7 dark code box-shadow-top-left"
                         href="css/roKit.min.css" download><span class="material-icons-outlined"> file_download
                         </span> Get <strong>ro:Kit</strong></a></span>
             </div>
@@ -62,7 +65,7 @@
             </ul>
         </nav>
     </header>
-    <section class="shadow-6 relative z-2">
+    <section class="shadow-6 relative z-2 p-b-2">
         <h1 class="text-center slide-left-delay-1 text-shadow-left">The ro:Kit Framework</h1>
         <div class="
         grid 
@@ -73,36 +76,37 @@
         grid-lg-col-span-6
         grid-xl-col-span-4
         children-shadow-8
-        text-xs-center
+        text-center
+        text-sm-left
         ">
             <div class="card justify-content-vertically slide-down-delay-2">
-                <h3 class="m-b-0  text-shadow-left">ro:Kit</h3>
-                <h6 class="m-t-0 m-b-1 text-muted">A Mix and Match Framework</h6>
-                <p><strong>ro:Kit</strong> - a modular and scalable responsive framework.</p>
+                <h3 class="m-b-0  text-shadow-left">A Mix and Match Framework</h3>
+                <p><strong>ro:Kit</strong> - a modular and scalable responsive framework that lets you mix-and-match functionalities, styles, animations and behaviors.</p>
                 <p>You can start using it by <a href="css/roKit.min.css" download>downloading</a> the compiled CSS file
                     and including it in your website.</p>
                 <code
                     class="m-1 gradient-primary-warning">&#x3C;link href=&#x22;css/roKit.min.css&#x22; rel=&#x22;stylesheet&#x22; /&#x3E;</code>
-                <p><i>This framework was built with SASS and love &#10084;&#65039;</i></p>
+                <p><i>This framework was built with <a href="https://sass-lang.com/" target="_blank">SASS</a> and love &#10084;&#65039;</i></p>
             </div>
             <div class="card justify-content-vertically slide-down-delay-3">
-                <h3 class="m-b-0 text-shadow-left">Why use a framework?</h3>
-                <p>Coding? Who's got time for that?</p>
-                <p>That's why frameworks exist. Someone, one day, for whatever reason, decided to spend their time
-                    coding classes and components so you don't have to!</p>
-                <p class="text-center"> <a class="btn shadow-6 primary" href="css/roKit.min.css" download><span
-                            class="material-icons-outlined"> file_download
+                <h3 class="m-b-0 text-shadow-left">Why Use a Framework?</h3>
+                <p>Coding? Who's got time for that? That's why frameworks exist.</p><p> Someone, one day, for whatever reason, decided to spend their time
+                    coding classes and components so you don't have to spend time coding!</p>
+                
+                <p>You don't want to bother making graphics with Photoshop? Got you covered - ro:Kit comes with an assortment of customizable gradients and color styles.</p>
+                <p class="text-center"> <a class="btn btn-lg-lg primary text-color" href="css/roKit.min.css"
+                        download><span class="material-icons-outlined"> file_download
                         </span> Get <strong>ro:Kit</strong></a></span></p>
             </div>
             <div class="card justify-content-vertically col-xl-span-4 col-lg-span-12 slide-down-delay-4">
-                <h3 class=" text-shadow-left">You don't like or know JS?</h3>
+                <h3 class=" text-shadow-left">You Don't Like or Know JS?</h3>
                 <p>We got you covered. Using <strong>ro:Kit</strong> requries 0 JavaScript skills.</p>
                 <p>You'll be able to use a vast array of responsive classes and animations by simply adding CSS classes
                     to your HTML code.</p>
-                <p>Although - a word of advice - do pick up some JavaScript skills in case you don't know it. It can
+                <p>Although - a word of advice - do pick up some JavaScript skills in case you don't know any. It can
                     make your web site even awesomer.</p>
-                <p class="text-center"><a class="btn shadow-6 secondary" target="_blank"
-                        href="https://www.w3schools.com/js/DEFAULT.asp">Learn JS</a></p>
+                <p class="text-center"><a class="btn btn-lg-lg secondary text-color" target="_blank"
+                        href="https://www.w3schools.com/js/DEFAULT.asp">Learn <strong>JavaScript</strong></a></p>
             </div>
 
         </div>
@@ -118,7 +122,7 @@
         <div>
             <h1 id="typography" class="text-shadow-left">Typography</h1>
             <h3 class="text-shadow-left">Code Example</h3>
-            <code class="shadow-4 white">code {
+            <code class="white gradient-secondary-warning css">code {
     background: var(--text-muted-color);
     color: var(--primary-color);
     font-family: var(--code-font);
@@ -200,6 +204,7 @@
     </section>
     <footer class="m-y-2 font-scale-minor-second">&#169; 2021 <a href="mailto:rok@mesojedec.io">Rok Mesojedec</a>. All
         rights reserved.</footer>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>

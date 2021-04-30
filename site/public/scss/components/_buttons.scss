@@ -36,10 +36,15 @@ $button-sizes: "xxs", "xs", "sm", "md", "lg", "xl", "xxl"; // Do not modify
     user-select: none;
     display: inline-block;
     text-decoration: none;
+    @extend .shadow-6;
     
     span {
         vertical-align: bottom;
         font-size: var(--btn-font-size);
+    }
+
+    &:after {
+        display: none;
     }
 
     &:hover:after,
@@ -58,13 +63,17 @@ $button-sizes: "xxs", "xs", "sm", "md", "lg", "xl", "xxl"; // Do not modify
         border-radius: var(--btn-border-radius);
     }
 
+    &.dark:hover:after, &.dark:active:active{
+        background: radial-gradient(#ffffff48, #e0e0e036);
+    }
+
     &:hover:after {
         animation: button-hover 0.35s ease;
     }
 
     &:active {
         transform: translate(1px, 1px);
-        box-shadow: none !important;
+        @extend .shadow-3;
     }
 
     @each $size in $button-sizes {
