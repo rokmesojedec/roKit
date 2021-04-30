@@ -7,7 +7,9 @@ $green: rgb(98, 189, 75);
 $black: black;
 $gray: #8f8f8f;
 $dark-blue: #001b33;
-$dark-transparent: 0000001f;
+$dark-transparent: #000000a8;
+$white: white;
+$dark-blue: #1b2386;
 
 // Theme Variables
 //-----------------------------------------------------------------------//
@@ -16,18 +18,22 @@ $dark-transparent: 0000001f;
 $muted: $gray;
 $text-color: $black;
 $primary: $baby-blue;
+$primary-dark: $dark-blue;
 $secondary: $light-salmon;
 $success: $green;
 $warning: $mindaro;
 $danger: $french-pink;
 $code-color: $dark-blue;
 $overlay-color: $dark-transparent;
+$text-light: $white;
 
 @mixin root-colors(){
     --text-color: #{$text-color};
+    --text-light-color: #{$text-light};
     --text-muted-color: #{$muted};
     --code-color: #{$code-color};
     --primary-color: #{$primary};
+    --primary-dark-color: #{$primary-dark};
     --secondary-color: #{$secondary};
     --success-color: #{$success};
     --warning-color: #{$warning};
@@ -37,17 +43,28 @@ $overlay-color: $dark-transparent;
 
 // list of color classes - gradient combinations are generated from 1 on 1 combinations of colors defined below 
 // below classes should correspond to CSS variables defined in root-colors mixins
-$colors: "primary", "secondary", "success", "warning", "danger", "code";
-$overlay-degrees: ("top": 0, "right": 90deg, "bottom": 180deg, "left": 270deg);
+$bgcolors-textcolor-map: 
+(
+    "primary": "--text-light-color", 
+    "primary-dark": "--text-light-color",
+    "secondary": "--text-light-color", 
+    "success": "--text-light-color", 
+    "warning": "--text-color", 
+    "danger": "--text-light-color", 
+    "code": "--text-light-color"
+);
+
+$overlay-degrees: ("bottom": 0, "right": 90deg, "top": 180deg, "left": 270deg);
 
 // generates text and background classes 
-@mixin color-classes($colors: $colors){
-    @each $color in $colors{
-        .text-#{$color}{
-            color: var(--#{$color}-color);
+@mixin color-classes($bgcolors-textcolor-map: $bgcolors-textcolor-map){
+    @each $bg, $color in $bgcolors-textcolor-map{
+        .text-#{$bg}{
+            color: var(--#{$bg}-color);
         }
-        .#{$color}{
-            background-color: var(--#{$color}-color);
+        .#{$bg}{
+            background-color: var(--#{$bg}-color);
+            color: var(#{$color});
         }
     }
 

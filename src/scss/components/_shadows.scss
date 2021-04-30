@@ -85,4 +85,5 @@ $shadow-levels: 10;
     .#{$name}-bottom-right { #{$type}-shadow:  #{$distance} #{$distance} #{$blur} #{$color}; }
     .#{$name}-left         { #{$type}-shadow: -#{$distance} 0px #{$blur} #{$color}; }
     .#{$name}-right        { #{$type}-shadow:  #{$distance} 0px #{$blur} #{$color}; }
+    .no-#{$name}           { #{$type}-shadow: none; }
 }

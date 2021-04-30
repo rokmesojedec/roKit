@@ -1,6 +1,8 @@
 @use "components/scales";
 @import "components/fontscale";
 
+$heading-shadow-class-name: "text-shadow-left";
+
 h1,
 h2,
 h3,
@@ -10,22 +12,13 @@ h6 {
     font: {
         family: var(--heading-font);
     }
+    @if $heading-shadow-class-name != null {
+        @extend .#{$heading-shadow-class-name};
+    }
 }
 
 .muted {
     color: var(--font-muted-color);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
 }
 
 .bold {
@@ -39,6 +32,7 @@ code {
     padding: calc(var(--unit) * 4);
     white-space: pre-wrap;
     display: block;
+    @extend .shadow-4;
 }
 
 $font-weights: 100, 300, 400, 500, 700;
@@ -89,5 +83,3 @@ $text-alignments: "left", "right", "center", "justify";
         }
     }
 }
-
-
