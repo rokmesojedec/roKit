@@ -56,10 +56,10 @@ $levels: 10;
 
 @each $direction, $letter in $directions {
     @for $i from 0 through $levels {
-        .children-p-#{$letter}-#{$i} > * {
+        .children-p-#{$letter}-#{$i}  * {
             padding-#{$direction}: $unit * $i;
         }
-        .children-m-#{$letter}-#{$i} > * {
+        .children-m-#{$letter}-#{$i}  * {
             margin-#{$direction}: $unit * $i;
         }
         .p-#{$letter}-#{$i} {
@@ -136,6 +136,14 @@ $levels: 10;
     }
 }
 
+@each $breakpoint, $size in $breakpoint-map{
+    .max-width-center-#{$breakpoint} {
+        max-width: $size;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
 .hide {
     display: none;
 }
@@ -165,6 +173,7 @@ $levels: 10;
     margin-left: auto;
     margin-right: auto;
 }
+
 .full-width{
     width: 100%;
 }

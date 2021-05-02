@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--light-color);
     position: relative;
     overflow: hidden;
 
@@ -17,8 +17,7 @@
         overflow: hidden;
     }
 
-    .bg-image {
-      
+    .cover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -57,7 +56,7 @@
 @mixin bg-image($img-url, $class-name){
     .#{$class-name}{
         @extend .overlay;
-        @extend .bg-image;
+        @extend .cover;
         background-image: url(#{$img-url});
     }
 }

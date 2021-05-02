@@ -43,6 +43,12 @@ $button-sizes: "xxs", "xs", "sm", "md", "lg", "xl", "xxl"; // Do not modify
         font-size: var(--btn-font-size);
     }
 
+    &.outline {
+        background: none; 
+        border-width: 0.1em;
+        border-style: solid;
+    }
+
     &:after {
         display: none;
     }

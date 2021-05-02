@@ -1,4 +1,5 @@
 @use "components/fontscale" as font;
+
 :root{
     @include root-colors();
     @include root-variables();
@@ -50,14 +51,16 @@ $shadow-animation-length: 0.7s;
 @include animation-series("slide-left-slow",  ("opacity": 0, "transform": translateX(-1rem)), ("opacity": 1, "transform": translateX(0)), $animation-delay-steps, $animation-base-length, $animation-fast-delay-multiplier);
 @include animation-series("slide-right-slow", ("opacity": 0, "transform": translateX( 1rem)), ("opacity": 1, "transform": translateX(0)), $animation-delay-steps, $animation-base-length, $animation-fast-delay-multiplier);
 
-@include animation-series("animate-text-shadow-left",   ("text-shadow": 0 0 1px #0000001f), ("text-shadow": -0.1em  0 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
-@include animation-series("animate-text-shadow-right",  ("text-shadow": 0 0 1px #0000001f), ("text-shadow":  0.1em  0 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
-@include animation-series("animate-text-shadow-down",   ("text-shadow": 0 0 1px #0000001f), ("text-shadow":  0  0.1em 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
-@include animation-series("animate-text-shadow-up",     ("text-shadow": 0 0 1px #0000001f), ("text-shadow":  0 -0.1em 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-text-shadow-left",    ("text-shadow": 0 0 1px #0000001f), ("text-shadow": -0.1em  0 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-text-shadow-right",   ("text-shadow": 0 0 1px #0000001f), ("text-shadow":  0.1em  0 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-text-shadow-down",    ("text-shadow": 0 0 1px #0000001f), ("text-shadow":  0  0.1em 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-text-shadow-up",      ("text-shadow": 0 0 1px #0000001f), ("text-shadow":  0 -0.1em 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
 
-@include animation-series("animate-box-shadow-left",   ("box-shadow": 0 0 1px #0000001f), ("box-shadow": -$box-shadow-length  0 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
-@include animation-series("animate-box-shadow-right",  ("box-shadow": 0 0 1px #0000001f), ("box-shadow":  $box-shadow-length  0 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
-@include animation-series("animate-box-shadow-down",   ("box-shadow": 0 0 1px #0000001f), ("box-shadow":  0  $box-shadow-length 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
-@include animation-series("animate-box-shadow-up",     ("box-shadow": 0 0 1px #0000001f), ("box-shadow":  0 -$box-shadow-length 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-box-shadow-left",     ("box-shadow": 0 0 1px #0000001f), ("box-shadow": -$box-shadow-length 0 1px #0000001f),    $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-box-shadow-right",    ("box-shadow": 0 0 1px #0000001f), ("box-shadow":  $box-shadow-length 0 1px #0000001f),    $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-box-shadow-bottom",   ("box-shadow": 0 0 1px #0000001f), ("box-shadow":  0  $box-shadow-length 1px #0000001f),   $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-box-shadow-top",      ("box-shadow": 0 0 1px #0000001f), ("box-shadow":  0 (-$box-shadow-length) 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
+@include animation-series("animate-box-shadow-top-left", ("box-shadow": 0 0 1px #0000001f), ("box-shadow":  (-$box-shadow-length) (-$box-shadow-length) 1px #0000001f), $animation-delay-steps, $shadow-animation-length, $animation-slow-delay-multiplier);
 
-@include animation-step("animate-box-shadow-top-left", ("box-shadow": 0 0 1px #0000001f), ("box-shadow": (-$box-shadow-length) (-$box-shadow-length) 1px #0000001f), 7, $shadow-animation-length, $animation-slow-delay-multiplier)
+// @include animation-step("animate-box-shadow-top-left", ("box-shadow": 0 0 1px #0000001f), ("box-shadow": (-$box-shadow-length) (-$box-shadow-length) 1px #0000001f), 7, $shadow-animation-length, $animation-slow-delay-multiplier);
+// @include animation-step("animate-box-shadow-top", ("box-shadow": 0 0 1px #0000001f), ("box-shadow": 0 (-$box-shadow-length) 1px #0000001f), 7, $shadow-animation-length, $animation-slow-delay-multiplier);
