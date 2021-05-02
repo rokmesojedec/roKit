@@ -1,7 +1,7 @@
-@use "theme";
+@use "color";
 
-@each $color, $text in theme.$bgcolors-textcolor-map {
-    @each $color2, $text in theme.$bgcolors-textcolor-map {
+@each $color, $text in color.$bgcolors-textcolor-map {
+    @each $color2, $text in color.$bgcolors-textcolor-map {
         @if $color != $color2 {
             .gradient-#{$color}-#{$color2} {
                 background: var(--#{$color}-color);
