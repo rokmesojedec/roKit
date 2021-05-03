@@ -1,10 +1,44 @@
 @use "breakpoints";
 
+%navAnchorOverride {
+    white-space: nowrap;
+    &:hover, a:hover{
+        text-decoration: none;
+    }
+    color: var(--text-color);
+    text: {
+        decoration: none
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+    &::after, &:hover::after, &:active::after{
+        display: none;
+    }
+}
+.branding{
+    font-weight: bold;
+    font-size: 200%;
+    @extend %navAnchorOverride;
+    &:hover { 
+        text-decoration: none;
+    }
+}
 nav {
+    display: block;
     margin: 0;
     padding: 0;
+    align-items: center;
     &.center ul {
         justify-content: center;
+    }
+    &.nav-light{
+        ul li a {
+            color:var(--light-color);
+        }
+    }
+    a.active {
+        font-weight: bold;
     }
     ul {
         display: block;
@@ -17,34 +51,19 @@ nav {
         li{
             display: flex;
             align-items: center;
-            .branding{
-                font-weight: bold;
-                font-size: 200%;
       
-                &:hover, a:hover{
-                    text-decoration: none;
-                }
-            }
             padding: var(--unit);
             font: {
                 family: var(--heading-font);
             }
             a{
-                &::after, &:hover::after, &:active::after{
-                    display: none;
-                }
-                color: var(--text-color);
-                text: {
-                    decoration: none
-                }
-                &:hover{
-                    text-decoration: underline;
-                }
+                @extend %navAnchorOverride;
             }
         }
     }
     @include for-each-breakpoint() using ($breakpoint) {
         &.nav-#{$breakpoint}{
+            display: flex;
             ul{
                 display: flex;
                 li:first-child{

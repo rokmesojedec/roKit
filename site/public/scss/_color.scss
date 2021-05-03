@@ -54,14 +54,17 @@ $grayscale: (
 $muted: map.get($grayscale, "gray-6");
 $text-color: map.get($grayscale, "dark");
 $primary: $baby-blue;
-$primary-dark: $dark-blue;
+$primary-light: mix(white, $primary, 25%);
+$primary-dark: darken($primary, 25%);
 $secondary: $light-salmon;
+$secondary-light: mix(white, $secondary, 25%);
+$secondary-dark: darken($secondary, 25%);
 $success: $green;
 $warning: $mindaro;
 $danger: $french-pink;
 $code-color: $dark-blue;
 $overlay-color: color.adjust(map.get($grayscale, "dark"), $alpha: -0.4);;
-$text-light: map.get($grayscale, "white");
+$text-light: map.get($grayscale, "light");
 
 @mixin root-colors(){
     --text-color: #{$text-color};
@@ -70,7 +73,10 @@ $text-light: map.get($grayscale, "white");
     --code-color: #{$code-color};
     --primary-color: #{$primary};
     --primary-dark-color: #{$primary-dark};
+    --primary-light-color: #{$primary-light};
     --secondary-color: #{$secondary};
+    --secondary-light-color: #{$secondary-light};
+    --secondary-dark-color: #{$secondary-dark};
     --success-color: #{$success};
     --warning-color: #{$warning};
     --danger-color: #{$danger};
@@ -84,13 +90,18 @@ $text-light: map.get($grayscale, "white");
 // below classes should correspond to CSS variables defined in root-colors mixins
 $bgcolors-textcolor-map: 
 (
-    "primary": "--text-light-color", 
-    "primary-dark": "--text-light-color",
-    "secondary": "--text-light-color", 
-    "success": "--text-light-color", 
-    "warning": "--text-color", 
-    "danger": "--text-light-color", 
-    "code": "--text-light-color"
+    "primary": "--light-color", 
+    "primary-dark": "--light-color",
+    "primary-light": "--light-color",
+    "secondary": "--light-color", 
+    "secondary-dark": "--light-color", 
+    "secondary-light": "--light-color", 
+    "success": "--light-color", 
+    "warning": "--dark-color", 
+    "danger": "--light-color", 
+    "code": "--light-color",
+    "light": "--dark-color",
+    "dark": "--light-color"
 );
 
 $overlay-degrees: ("bottom": 0, "right": 90deg, "top": 180deg, "left": 270deg);
@@ -98,15 +109,19 @@ $overlay-degrees: ("bottom": 0, "right": 90deg, "top": 180deg, "left": 270deg);
 // generates text and background classes 
 @mixin color-classes($bgcolors-textcolor-map: $bgcolors-textcolor-map){
     @each $bg, $color in $bgcolors-textcolor-map{
-        .text-#{$bg}{
-            color: var(--#{$bg}-color);
-        }
         .border-#{$bg}{
             border-color: var(--#{$bg}-color);
         }
         .#{$bg}{
             background-color: var(--#{$bg}-color);
             color: var(#{$color});
+            --btn-color: var(--#{$bg}-color);
+            --btn-text-color: var(#{$color});
+        }
+        .text-#{$bg}{
+            color: var(--#{$bg}-color);
+            --btn-color: var(--#{$bg}-color);
+            --btn-text-color: var(#{$color});
         }
     }
 
@@ -125,13 +140,10 @@ $overlay-degrees: ("bottom": 0, "right": 90deg, "top": 180deg, "left": 270deg);
     .text-muted {
         color: var(--text-gray-6-color);
     }
-    .border-light{
-        border-color: var(--light-color);
-    }
     .no-background{
         background: none;
     }
     .white{
-        background-color: var(--light-color);
+        background-color: white;
     }
 }

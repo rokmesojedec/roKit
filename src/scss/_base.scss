@@ -21,6 +21,19 @@ html {
         family: var(--primary-font);
     }
     color: var(--font-color);
+    overflow-x: hidden;
+}
+
+table {
+    tr{
+        th,td{
+            padding: $unit;
+        }
+    }
+}
+
+.overflow-x{
+    overflow-x: auto;
 }
 
 header, section, article, aside, footer, nav, div, p, footer {

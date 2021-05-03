@@ -27,8 +27,6 @@
     }
 }
 
-
-
 @mixin animation-series($name, $startRuleMap, $endRuleMap, $levels: 20, $animation-length: 0.4s, $delay-increment: 0.3){
     @for $i from 0 through $levels {
        @include animation-step($name, $startRuleMap, $endRuleMap, $i, $animation-length, $delay-increment);
@@ -41,5 +39,3 @@
         }
     }
 }
-
-

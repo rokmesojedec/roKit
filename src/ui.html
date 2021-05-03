@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ro:Kit - Web Responsive Design Framework</title>
+    <link rel="stylesheet" href="css/roKit.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-scale-minor-second 
+             font-scale-sm-major-second 
+             font-scale-xl-minor-third 
+             children-p-x-sm-10 
+             children-p-x-4">
+    <header class="p-y-0 slide-down-delay-1 fixed-lg full-width z-3 top white shadow-9">
+        <nav class="p-sm-3 p-xs-3 p-md-3 p-lg-0 nav-lg font-scale-minor-second">
+            <a href="index.html" class="branding p-y-xs-1 p-sm-0 children-p-sm-1 text-shadow-left m-r-2">Ro:Kit</a>
+            <ul class=" children-p-sm-1 margin-left-auto">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#nav">Animations</a></li>
+                <li><a href="#colors">Colors & Styling</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="ui.html" class="active">UI Components</a></li>
+                <li><a href="#nav">Utilities</a></li>
+                <li><a href="#typography">Typography</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="shadow-6 relative z-2 p-y-4">
+        <div class="max-width-center-xxl">
+            <h1 class="slide-left-delay-1 text-shadow-left">Ro:Kit Buttons</h1>
+            <table class="responsive-table-xl first-col-heading  children-slide-down">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Default</th>
+                        <th>Primary</th>
+                        <th>Secondary</th>
+                        <th>Warning</th>
+                        <th>Danger</th>
+                        <th>Success</th>
+                        <th>Disabled</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tr class="children-slide-down">
+                    <th scope="row">Flat</th>
+                    <td><span data-tooltip-bottom="class='btn flat'"><button class="btn btn-xl-sm flat">Deafult</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-primary flat'"><button class="btn btn-xl-sm text-primary flat">Primary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-secondary flat'"><button class="btn btn-xl-sm text-secondary flat">Secondary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-warning flat'"><button class="btn btn-xl-sm text-warning flat">Warning</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-danger flat'"><button class="btn btn-xl-sm text-danger flat">Danger</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-success flat'"><button class="btn btn-xl-sm text-success flat">Success</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn flat' disabled"><button class="btn btn-xl-sm flat" disabled>Disabled</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn flat'"><a class="btn btn-xl-sm flat">Link</a></span></td>
+                </tr>
+                <tr class="children-slide-down">
+                    <th scope="row">Default</th>
+                    <td><span data-tooltip-bottom="class='btn'"><button class="btn btn-xl-sm">Deafult</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn primary'"><button class="btn btn-xl-sm primary">Primary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn secondary'"><button class="btn btn-xl-sm secondary">Secondary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn warning'"><button class="btn btn-xl-sm warning">Warning</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn danger'"><button class="btn btn-xl-sm danger">Danger</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn success'"><button class="btn btn-xl-sm success">Success</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn' disabled"><button class="btn btn-xl-sm" disabled>Disabled</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn'"><a class="btn btn-xl-sm">Link</a></span></td>
+                </tr>
+                <tr class="children-slide-down">
+                    <th scope="row">Raised</th>
+                    <td><button class="btn btn-xl-sm raised">Deafult</button></td>
+                    <td><button class="btn btn-xl-sm raised primary">Primary</button></td>
+                    <td><button class="btn btn-xl-sm raised secondary">Secondary</button></td>
+                    <td><button class="btn btn-xl-sm raised warning">Warning</button></td>
+                    <td><button class="btn btn-xl-sm raised danger">Danger</button></td>
+                    <td><button class="btn btn-xl-sm raised success">Success</button></td>
+                    <td><button class="btn btn-xl-sm raised" disabled>Disabled</button></td>
+                    <td><a class="btn btn-xl-sm raised">Link</a></td>
+                </tr>
+                <tr class="children-slide-down">
+                    <th scope="row">Outline</th>
+                    <td><button class="btn btn-xl-sm outline text-dark">Deafult</button></td>
+                    <td><button class="btn btn-xl-sm outline text-primary">Primary</button></td>
+                    <td><button class="btn btn-xl-sm outline text-secondary">Secondary</button></td>
+                    <td><button class="btn btn-xl-sm outline text-warning">Warning</button></td>
+                    <td><button class="btn btn-xl-sm outline text-danger">Danger</button></td>
+                    <td><button class="btn btn-xl-sm outline text-success">Success</button></td>
+                    <td><button class="btn btn-xl-sm outline " disabled>Disabled</button></td>
+                    <td><a class="btn btn-xl-sm outline">Link</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="
+               p-y-1
+               children-p-0
+               primary
+               shadow-6 
+               relative z-1
+               text-dark
+               ">
+        <div class="max-width-center-xxl children-slide-up">
+            <h1 class="slide-up-delay-1">Ro:Kit Tooltips</h1>
+            <p>Tooltips are fun! Ro:Kit makes it very easy to add a tooltip to your site.</p>
+            <p>Just add <code class="inline white">data-tooltip-[top|left|bottom|right]="lorem ipsum"</code> to your
+                HTML tag and the tooltip will appear when hovered over.</p>
+            <p>If you want to display the tooltip without hovering over the element just add <code
+                    class="inline white">class="static-tooltip"</code> to the tag with tooltip data attribute.</p>
+            <p class="warning"><strong>Caveat:</strong> when adding tooltips to Ro:Kit buttons (or any elements using
+                ::before and ::after pseudo selectors) you should warp those elements in an inline-block element and add
+                the tooltip data attribute to the wrapper.</p>
+            <div class="grid 
+                        grid-col-span-12 
+                        grid-lg-col-span-3
+                        p-x-10
+                        p-t-5
+                        p-b-2
+                        children-shadow-6 children-p-2 gap-2 text-center children-slide-up">
+                <div class="white">
+                    <p data-tooltip-left="Hello! Look at me I'm a tooltip." class="static-tooltip">Left
+                        positioned tooltip</p>
+                </div>
+                <div class="white">
+                    <p data-tooltip-top="Hello! Look at me I'm a tooltip." class="static-tooltip">Top
+                        positioned tooltip</p>
+                </div>
+                <div class="white">
+                    <p data-tooltip-bottom="Hello! Look at me I'm a tooltip." class="static-tooltip">Bottom
+                        positioned tooltip</p>
+                </div>
+                <div class="white">
+                    <p data-tooltip-right="Hello! Look at me I'm a tooltip." class="static-tooltip">Right
+                        positioned tooltip</p>
+                </div>
+            </div>
+            <div class="grid 
+                        grid-col-span-12 
+                        grid-lg-col-span-3
+                        p-x-10
+                        p-b-5
+                        p-t-2
+                        children-shadow-6 children-p-2 gap-2 text-center  children-slide-up">
+                <div class="white"><span class="inline-block"
+                        data-tooltip-left="Hello! Look at me I'm a tooltip."><button class="btn text-primary flat">
+                            Hover Left Tooltip</button></span></div>
+                <div class="white"><span class="inline-block"
+                        data-tooltip-top="Hello! Look at me I'm a tooltip."><button class="btn text-secondary flat">
+                            Hover Top Tooltip</button></span></div>
+                <div class="white"><span class="inline-block"
+                        data-tooltip-bottom="Hello! Look at me I'm a tooltip."><button class="btn text-code flat"> Hover
+                            Bottom Tooltip</button></span></div>
+                <div class="white"><span class="inline-block"
+                        data-tooltip-right="Hello! Look at me I'm a tooltip."><button class="btn text-danger flat">
+                            Hover Right Tooltip</button></span></div>
+
+            </div>
+        </div>
+    </section>
+    <section class="children-p-0">
+        <div class="max-width-center-xxl children-p-x-0">
+            <h1 class="slide-left-delay-1">Box Shadows</h1>
+            <p>I did this crazy thing with box-shadows - I created a mixin which scales shadows based on a numeric
+                scale.
+                Similar to how headings and fonts scale.</p>
+            <p class="m-b-2"> The default scale used is the <strong>Augmented Fourth (1.414)</strong>.</p>
+            <div class="grid 
+                    grid-col-span-2 
+                    grid-xs-col-span-12 
+                    grid-sm-col-span-6 
+                    grid-md-col-span-4 
+                    p-0
+                    children-p-0 
+                    gap-2 
+                    children-slide-up">
+                <div>
+                    <div class="card gradient-primary-light-secondary shadow-1">
+                        <h2>Shadow 1</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-2">
+                        <h2>Shadow 2</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-3">
+                        <h2>Shadow 3</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-4">
+                        <h2>Shadow 4</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-5">
+                        <h2>Shadow 5</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-6">
+                        <h2>Shadow 6</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-7">
+                        <h2>Shadow 7</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-8">
+                        <h2>Shadow 8</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-9">
+                        <h2>Shadow 9</h2>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="m-y-2 font-scale-minor-second">
+        <div class="max-width-center-xxl">
+            &#169; 2021 <a href="mailto:rok@mesojedec.io">Rok Mesojedec</a>. All
+            rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

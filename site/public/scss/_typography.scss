@@ -33,6 +33,10 @@ code {
     white-space: pre-wrap;
     display: block;
     @extend .shadow-4;
+    &.inline {
+        display: inline-block;
+        padding: calc(var(--unit) / 2);
+    }
 }
 
 $font-weights: 100, 300, 400, 500, 700;
