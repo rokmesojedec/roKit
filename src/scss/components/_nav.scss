@@ -2,28 +2,33 @@
 
 %navAnchorOverride {
     white-space: nowrap;
-    &:hover, a:hover{
+    &:hover,
+    a:hover {
         text-decoration: none;
     }
     color: var(--text-color);
     text: {
-        decoration: none
+        decoration: none;
     }
-    &:hover{
+    &:hover {
         text-decoration: underline;
     }
-    &::after, &:hover::after, &:active::after{
+    &::after,
+    &:hover::after,
+    &:active::after {
         display: none;
     }
 }
-.branding{
+
+.branding {
     font-weight: bold;
     font-size: 200%;
     @extend %navAnchorOverride;
-    &:hover { 
+    &:hover {
         text-decoration: none;
     }
 }
+
 nav {
     display: block;
     margin: 0;
@@ -32,9 +37,9 @@ nav {
     &.center ul {
         justify-content: center;
     }
-    &.nav-light{
+    &.nav-light {
         ul li a {
-            color:var(--light-color);
+            color: var(--light-color);
         }
     }
     a.active {
@@ -48,28 +53,56 @@ nav {
         &.center {
             justify-content: center;
         }
-        li{
-            display: flex;
+        li {
+            display: block;
             align-items: center;
-      
+            position: relative;
             padding: var(--unit);
             font: {
                 family: var(--heading-font);
             }
-            a{
+
+            a {
                 @extend %navAnchorOverride;
+            }
+
+            ul {
+                display: block;
+                position: static;
+                box-shadow: none !important;
+                background: none !important;
             }
         }
     }
     @include for-each-breakpoint() using ($breakpoint) {
-        &.nav-#{$breakpoint}{
+        &.nav-#{$breakpoint} {
             display: flex;
-            ul{
+            & > ul {
                 display: flex;
-                li:first-child{
-                    padding-left: var(--unit);
+
+                li {
+                    &:first-child {
+                        padding-left: var(--unit);
+                    }
+                    &:hover a ~ ul,
+                    &:hover ~ ul:hover {
+                        display: block;
+                    }
+                    & a ~ ul {
+                        border-radius: 0 0 5px 5px;
+                        bottom: 0;
+                        left: 50%;
+                        position: absolute;
+                        display: none;
+                        transform: translate(-50%, 100%);
+                        animation: fade-in 0.3s;
+                        li {
+                            padding: calc(var(--unit) / 2) var(--unit);
+                            display: list-item;
+                        }
+                    }
                 }
-            }   
+            }
         }
     }
 }

@@ -29,7 +29,7 @@ $btn-border-width: 0.1em;
     position: relative;
     padding: calc(var(--btn-font-size) * 0.75) calc(var(--btn-font-size) * 2);
     color: var(--btn-color);
-    font-weight: var(--btn-font-weight);
+    font-weight: var(--btn-font-weight); //;
     border: none;
     border-radius: var(--btn-border-radius);
     font-family: var(--primary-font);

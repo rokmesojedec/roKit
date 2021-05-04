@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ro:Kit - Web Responsive Design Framework</title>
     <link rel="stylesheet" href="css/roKit.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ui.css">
 </head>
 
 <body class="font-scale-minor-second 
@@ -16,23 +16,32 @@
              children-p-x-sm-10 
              children-p-x-4">
     <header class="p-y-0 slide-down-delay-1 fixed-lg full-width z-3 top white shadow-9">
-        <nav class="p-sm-3 p-xs-3 p-md-3 p-lg-0 nav-lg font-scale-minor-second">
+        <nav class="p-sm-3 p-xs-3 p-md-3 p-lg-0 nav-lg font-scale-minor-second max-width-center-xxl">
             <a href="index.html" class="branding p-y-xs-1 p-sm-0 children-p-sm-1 text-shadow-left m-r-2">Ro:Kit</a>
             <ul class=" children-p-sm-1 margin-left-auto">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#nav">Animations</a></li>
                 <li><a href="#colors">Colors & Styling</a></li>
                 <li><a href="#layout">Layout</a></li>
-                <li><a href="ui.html" class="active">UI Components</a></li>
+                <li><a href="ui.html" class="active">UI Components</a>
+                    <ul class="white p-1 shadow-9">
+                        <li><a href="ui.html#buttons">Buttons</a></li>
+                        <li><a href="ui.html#cards">Cards</a></li>
+                        <li><a href="ui.html#jumbo">Jumbo</a></li>
+                        <li><a href="ui.html#tooltips">Tooltips</a></li>
+                    </ul>
+                </li>
                 <li><a href="#nav">Utilities</a></li>
                 <li><a href="#typography">Typography</a></li>
             </ul>
         </nav>
     </header>
-    <section class="shadow-6 relative z-2 p-y-4">
+    <section class="shadow-6 relative z-2 p-y-8" id="buttons">
         <div class="max-width-center-xxl">
             <h1 class="slide-left-delay-1 text-shadow-left">Ro:Kit Buttons</h1>
-            <table class="responsive-table-xl first-col-heading  children-slide-down">
+            <p>Buttons, buttons, buttons! So many buttons to choose from and they're all so satisfying to click on.</p>
+            <p>Go ahead click on a few. They don't do anything - they're here just for the show.</p>
+            <table class="responsive-table-xl first-col-heading m-t-4 children-slide-down">
                 <thead>
                     <tr>
                         <th></th>
@@ -48,24 +57,38 @@
                 </thead>
                 <tr class="children-slide-down">
                     <th scope="row">Flat</th>
-                    <td><span data-tooltip-bottom="class='btn flat'"><button class="btn btn-xl-sm flat">Deafult</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn text-primary flat'"><button class="btn btn-xl-sm text-primary flat">Primary</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn text-secondary flat'"><button class="btn btn-xl-sm text-secondary flat">Secondary</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn text-warning flat'"><button class="btn btn-xl-sm text-warning flat">Warning</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn text-danger flat'"><button class="btn btn-xl-sm text-danger flat">Danger</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn text-success flat'"><button class="btn btn-xl-sm text-success flat">Success</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn flat' disabled"><button class="btn btn-xl-sm flat" disabled>Disabled</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn flat'"><button
+                                class="btn btn-xl-sm flat">Deafult</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-primary flat'"><button
+                                class="btn btn-xl-sm text-primary flat">Primary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-secondary flat'"><button
+                                class="btn btn-xl-sm text-secondary flat">Secondary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-warning flat'"><button
+                                class="btn btn-xl-sm text-warning flat">Warning</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-danger flat'"><button
+                                class="btn btn-xl-sm text-danger flat">Danger</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-success flat'"><button
+                                class="btn btn-xl-sm text-success flat">Success</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn flat' disabled"><button class="btn btn-xl-sm flat"
+                                disabled>Disabled</button></span></td>
                     <td><span data-tooltip-bottom="class='btn flat'"><a class="btn btn-xl-sm flat">Link</a></span></td>
                 </tr>
                 <tr class="children-slide-down">
                     <th scope="row">Default</th>
-                    <td><span data-tooltip-bottom="class='btn'"><button class="btn btn-xl-sm">Deafult</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn primary'"><button class="btn btn-xl-sm primary">Primary</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn secondary'"><button class="btn btn-xl-sm secondary">Secondary</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn warning'"><button class="btn btn-xl-sm warning">Warning</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn danger'"><button class="btn btn-xl-sm danger">Danger</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn success'"><button class="btn btn-xl-sm success">Success</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn' disabled"><button class="btn btn-xl-sm" disabled>Disabled</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn'"><button class="btn btn-xl-sm">Deafult</button></span>
+                    </td>
+                    <td><span data-tooltip-bottom="class='btn primary'"><button
+                                class="btn btn-xl-sm primary">Primary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn secondary'"><button
+                                class="btn btn-xl-sm secondary">Secondary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn warning'"><button
+                                class="btn btn-xl-sm warning">Warning</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn danger'"><button
+                                class="btn btn-xl-sm danger">Danger</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn success'"><button
+                                class="btn btn-xl-sm success">Success</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn' disabled"><button class="btn btn-xl-sm"
+                                disabled>Disabled</button></span></td>
                     <td><span data-tooltip-bottom="class='btn'"><a class="btn btn-xl-sm">Link</a></span></td>
                 </tr>
                 <tr class="children-slide-down">
@@ -93,8 +116,8 @@
             </table>
         </div>
     </section>
-    <section class="
-               p-y-1
+    <section id="tooltips" class="
+               p-y-8
                children-p-0
                primary
                shadow-6 
@@ -108,13 +131,14 @@
                 HTML tag and the tooltip will appear when hovered over.</p>
             <p>If you want to display the tooltip without hovering over the element just add <code
                     class="inline white">class="static-tooltip"</code> to the tag with tooltip data attribute.</p>
-            <p class="warning"><strong>Caveat:</strong> when adding tooltips to Ro:Kit buttons (or any elements using
+            <p class="warning shadow-4"><strong>Caveat:</strong> when adding tooltips to Ro:Kit buttons (or any elements using
                 ::before and ::after pseudo selectors) you should warp those elements in an inline-block element and add
                 the tooltip data attribute to the wrapper.</p>
             <div class="grid 
                         grid-col-span-12 
                         grid-lg-col-span-3
-                        p-x-10
+                        p-x-sm-10
+                        p-x-xs-4
                         p-t-5
                         p-b-2
                         children-shadow-6 children-p-2 gap-2 text-center children-slide-up">
@@ -138,7 +162,8 @@
             <div class="grid 
                         grid-col-span-12 
                         grid-lg-col-span-3
-                        p-x-10
+                        p-x-sm-10
+                        p-x-xs-4
                         p-b-5
                         p-t-2
                         children-shadow-6 children-p-2 gap-2 text-center  children-slide-up">

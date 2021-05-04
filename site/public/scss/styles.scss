@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
 
 header{
-    background-size: 100vw 100vh !important;
+    background-size: 100vw 550px !important;
     background-position: top;
+}
+
+.sign-of-horn{
+    position: absolute;
+    top: -5%;
+    font-size: calc(var(--h1) * 1.5);
+    color: #f0ffff30;
+    left: 50%;
+    transform: rotate(13deg);
 }

@@ -5,7 +5,7 @@
     color: var(--light-color);
     position: relative;
     overflow: hidden;
-
+    min-height: 550px;
 
     .overlay {
         z-index: 1;

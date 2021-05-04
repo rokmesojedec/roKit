@@ -74,6 +74,9 @@ $text-alignments: "left", "right", "center", "justify";
 .lowercase {
     text-transform: lowercase;
 }
+.uppercase {
+    text-transform: uppercase;
+}
 
 @include for-each-breakpoint() using ($breakpoint) {
     @each $scale, $value in scales.$map {
