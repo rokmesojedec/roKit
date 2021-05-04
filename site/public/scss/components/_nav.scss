@@ -2,17 +2,18 @@
 
 %navAnchorOverride {
     white-space: nowrap;
+    border: none;
     &:hover,
     a:hover {
-        text-decoration: none;
+        text-decoration: underline;
+        box-shadow: none !important;
     }
-    color: var(--text-color);
+
+    color: unset;
     text: {
         decoration: none;
     }
-    &:hover {
-        text-decoration: underline;
-    }
+
     &::after,
     &:hover::after,
     &:active::after {
@@ -23,6 +24,10 @@
 .branding {
     font-weight: bold;
     font-size: 200%;
+    display: inline-block;
+    padding: {top: var(--unit); bottom: var(--unit);}
+    margin: {top: var(--unit); bottom: var(--unit);}
+    
     @extend %navAnchorOverride;
     &:hover {
         text-decoration: none;
@@ -61,16 +66,18 @@ nav {
             font: {
                 family: var(--heading-font);
             }
-
             a {
                 @extend %navAnchorOverride;
+            
             }
 
             ul {
                 display: block;
                 position: static;
-                box-shadow: none !important;
-                background: none !important;
+                background: unset;
+                li a {
+                    color: unset;
+                }
             }
         }
     }
@@ -96,6 +103,7 @@ nav {
                         display: none;
                         transform: translate(-50%, 100%);
                         animation: fade-in 0.3s;
+                        // background: var(--overlay-color);
                         li {
                             padding: calc(var(--unit) / 2) var(--unit);
                             display: list-item;

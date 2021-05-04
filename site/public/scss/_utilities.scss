@@ -15,7 +15,7 @@ $levels: 10;
         padding-left: $unit * $i;
         padding-right: $unit * $i;
     }
-    .children-y-x-#{$i} > * {
+    .children-p-y-#{$i} > * {
         padding-top: $unit * $i;
         padding-bottom: $unit * $i;
     }
@@ -26,7 +26,7 @@ $levels: 10;
         margin-left: $unit * $i;
         margin-right: $unit * $i;
     }
-    .children-m-x-#{$i} > * {
+    .children-m-y-#{$i} > * {
         margin-top: $unit * $i;
         margin-bottom: $unit * $i;
     }

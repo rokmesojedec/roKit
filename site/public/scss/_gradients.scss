@@ -7,6 +7,12 @@
                 background: var(--#{$color}-color);
                 background: linear-gradient($default-gradient-rotation, var(--#{$color}-color), var(--#{$color2}-color));
             }
+            @include for-each-breakpoint() using ($breakpoint) {
+                .gradient-#{$breakpoint}-#{$color}-#{$color2} {
+                    background: var(--#{$color}-color);
+                    background: linear-gradient($default-gradient-rotation, var(--#{$color}-color), var(--#{$color2}-color));
+                }
+            }
         }
     }
 }
