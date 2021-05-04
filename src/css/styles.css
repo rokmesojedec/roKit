@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
 /* Source: https://getbootstrap.com/docs/5.0/layout/breakpoints/         */
+@media (max-width: 576px) {
+  .jumbo {
+    height: 100vh !important;
+  }
+}
 @media (min-width: 992px) {
   header {
     background-size: 100vw 550px !important;

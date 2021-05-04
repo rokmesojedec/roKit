@@ -1,6 +1,6 @@
 a {
     --hover-color: var(--primary-color);
-    --link-text-color: var(--text-dark);
+    --link-text-color: var(--dark-color);
     --link-hover-color: var(--link-text-color);
     text-decoration: none;
     display: inline-block;
@@ -20,4 +20,10 @@ a {
         }
     }
     
+}
+
+@mixin anchor-root(){
+    --hover-color: var(--primary-color);
+    --link-text-color: var(--text-dark);
+    --link-hover-color: var(--link-text-color);
 }

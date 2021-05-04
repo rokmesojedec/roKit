@@ -24,6 +24,7 @@ $btn-border-width: 0.1em;
 }
 
 .btn {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     --btn-color: var(--dark-color);
     --btn-text-color: var(--light-color);
     position: relative;

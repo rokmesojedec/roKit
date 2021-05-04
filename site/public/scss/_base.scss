@@ -1,5 +1,6 @@
 @use "components/fontscale" as font;
 
+
 :root{
     @include root-colors();
     @include root-variables();
