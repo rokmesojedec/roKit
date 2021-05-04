@@ -1,33 +1,23 @@
 a {
+    --hover-color: var(--primary-color);
+    --link-text-color: var(--text-dark);
+    --link-hover-color: var(--link-text-color);
     text-decoration: none;
-    //color: var(--text-color);
     display: inline-block;
     position: relative;
-    color: var(--code-color);
-    transition: color 0.3s;
-
-    &::after{
-        z-index: -1;
-        $underline-height: 0.25em;
-        content: "";
-        height: $underline-height;
-        width: 104%;
-        position: absolute;
-        bottom: -0.1em; 
-        left: -2%;
-        background-color: var(--primary-color);
-        transition: height 0.3s, bottom 0.3s, background-color 0.3s;
+    color: var(--link-text-color);
+    border-bottom: 0.25em inset var(--hover-color);
+   
+    &:not(.btn):hover{
+        box-shadow:inset 0px 0px 0px 1em var(--hover-color);
+        color: var(--link-hover-color);
     }
 
-    &:hover::after{
-        height: 1.5em;
-        bottom: -0.2em;
+    @each $bg, $color in $bgcolors-textcolor-map{ 
+        &.link-#{$bg} {
+            --hover-color: var(--#{$bg}-color);
+            --link-hover-color: var(#{$color});
+        }
     }
-
-
-    &:active::after{
-        height: 1.5em;
-        bottom: -0.2em;
-        background-color: var(--secondary-color);
-    }
+    
 }

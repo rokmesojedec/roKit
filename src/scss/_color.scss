@@ -123,6 +123,22 @@ $overlay-degrees: ("bottom": 0, "right": 90deg, "top": 180deg, "left": 270deg);
             --btn-color: var(--#{$bg}-color);
             --btn-text-color: var(#{$color});
         }
+        @include for-each-breakpoint() using ($breakpoint) {
+            .border-#{$breakpoint}-#{$bg}{
+                border-color: var(--#{$bg}-color);
+            }
+            .#{$bg}-#{$breakpoint}{
+                background-color: var(--#{$bg}-color);
+                color: var(#{$color});
+                --btn-color: var(--#{$bg}-color);
+                --btn-text-color: var(#{$color});
+            }
+            .text-#{$breakpoint}-#{$bg}{
+                color: var(--#{$bg}-color);
+                --btn-color: var(--#{$bg}-color);
+                --btn-text-color: var(#{$color});
+            }
+        }
     }
 
     @each $position, $degrees in $overlay-degrees {
@@ -131,12 +147,6 @@ $overlay-degrees: ("bottom": 0, "right": 90deg, "top": 180deg, "left": 270deg);
         }
     }
 
-    .text-dark {
-        color: var(--dark-color);
-    }
-    .text-light {
-        color: var(--light-color);
-    }
     .text-muted {
         color: var(--gray-6-color);
     }
@@ -145,5 +155,13 @@ $overlay-degrees: ("bottom": 0, "right": 90deg, "top": 180deg, "left": 270deg);
     }
     .white{
         background-color: white;
+    }
+}
+
+@for $i from 1 through 100 {
+    @if $i % 5 == 0 {
+        .opacity-#{$i} {
+            opacity: $i / 100;
+        }
     }
 }
