@@ -905,7 +905,7 @@ a {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: var(--link-text-color);
+  color: unset;
   border-bottom: 0.25em inset var(--hover-color);
 }
 a:not(.btn):hover {

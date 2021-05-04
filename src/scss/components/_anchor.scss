@@ -5,7 +5,7 @@ a {
     text-decoration: none;
     display: inline-block;
     position: relative;
-    color: var(--link-text-color);
+    color: unset;
     border-bottom: 0.25em inset var(--hover-color);
    
     &:not(.btn):hover{
@@ -22,8 +22,8 @@ a {
     
 }
 
-@mixin anchor-root(){
-    --hover-color: var(--primary-color);
-    --link-text-color: var(--text-dark);
-    --link-hover-color: var(--link-text-color);
-}
+// @mixin anchor-root(){
+//     --hover-color: var(--primary-color);
+//     --link-text-color: var(--text-dark);
+//     --link-hover-color: var(--link-text-color);
+// }
