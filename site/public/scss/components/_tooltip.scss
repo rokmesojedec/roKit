@@ -1,6 +1,5 @@
 // Inspired by and source: https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/
-$tooltip-color: transparentize($gray-10, $amount: 0.25);
-$tooltip-offset: -10px;
+
 [data-tooltip] {
     position: relative;
     &:hover:before,
@@ -15,8 +14,8 @@ $tooltip-offset: -10px;
     &:before {
         content: attr(data-tooltip);
         display: none;
-        color: $text-light;
-        background: $tooltip-color;
+        color: $tooltip-text-color;
+        background: $tooltip-bg-color;
         padding: $unit / 2 $unit;
         border-radius: 4px;
         min-width: 10rem;
@@ -27,8 +26,8 @@ $tooltip-offset: -10px;
         content: "";
         width: 0px;
         height: 0px;
-        border: 5px solid $tooltip-color;
-        border-color: transparent transparent $tooltip-color transparent;
+        border: 5px solid $tooltip-bg-color;
+        border-color: transparent transparent $tooltip-bg-color transparent;
     }
 
     &.static-tooltip {
@@ -54,7 +53,7 @@ $tooltip-offset: -10px;
         left: 50%;
         top: $tooltip-offset;
         transform: translate(-50%, -1px);
-        border-color: $tooltip-color transparent transparent transparent;
+        border-color: $tooltip-bg-color transparent transparent transparent;
     }
 }
 
@@ -71,7 +70,7 @@ $tooltip-offset: -10px;
         left: $tooltip-offset;
         top: 50%;
         transform: translate(-1px, -50%);
-        border-color: transparent transparent transparent $tooltip-color;
+        border-color: transparent transparent transparent $tooltip-bg-color;
     }
 }
 
@@ -89,7 +88,7 @@ $tooltip-offset: -10px;
         right: $tooltip-offset;
         top: 50%;
         transform: translate(1px, -50%);
-        border-color: transparent $tooltip-color transparent transparent;
+        border-color: transparent $tooltip-bg-color transparent transparent;
     }
 }
 

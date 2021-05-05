@@ -9,7 +9,7 @@
         box-shadow: none !important;
     }
 
-    color: unset;
+    color: inherit !important;
     text: {
         decoration: none;
     }
@@ -39,6 +39,11 @@ nav {
     margin: 0;
     padding: 0;
     align-items: center;
+    &.nav-flex > ul, & > ul.nav-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     &.center ul {
         justify-content: center;
     }
@@ -49,6 +54,9 @@ nav {
     }
     a.active {
         font-weight: bold;
+        &:before {
+            content: "\2013" + " ";
+        }
     }
     ul {
         display: block;
@@ -68,15 +76,13 @@ nav {
             }
             a {
                 @extend %navAnchorOverride;
-            
             }
-
             ul {
                 display: block;
                 position: static;
                 background: unset;
                 li a {
-                    color: unset;
+                    color: unset !important;
                 }
             }
         }
@@ -103,7 +109,6 @@ nav {
                         display: none;
                         transform: translate(-50%, 100%);
                         animation: fade-in 0.3s;
-                        // background: var(--overlay-color);
                         li {
                             padding: calc(var(--unit) / 2) var(--unit);
                             display: list-item;

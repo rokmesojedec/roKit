@@ -39,6 +39,12 @@ code {
     }
 }
 
+.code-inline { 
+    font-family: var(--code-font);
+    font-weight: bold;
+    color: var(--code-color);
+}
+
 $font-weights: 100, 300, 400, 500, 700;
 
 @each $weight in $font-weights {

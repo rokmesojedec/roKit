@@ -1,8 +1,8 @@
 @use "sass:color";
 @use "sass:map";
 
-@import "variables",
-        "color",
+@import "color",
+        "variables",
         "components/card", 
         "components/shadows", 
         "components/table",

@@ -38,6 +38,13 @@ $animation-fast-delay-multiplier: 0.65;
 $animation-slow-delay-multiplier: 0.45;
 $animation-delay-multiplier: 0.25;
 
+// Tooltip Variables
+//-----------------------------------------------------------------------//
+
+$tooltip-text-color: white;
+$tooltip-bg-color: transparentize($gray-10, $amount: 0.25);
+$tooltip-offset: -10px;
+
 @mixin root-variables(){
     --unit: #{$unit};
     --base-font-size: #{$base-font-size};

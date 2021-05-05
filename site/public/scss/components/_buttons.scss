@@ -3,34 +3,33 @@
 $button-sizes: "xxs", "xs", "sm", "md", "lg", "xl", "xxl"; // Do not modify
 $btn-border-width: 0.1em;
 @mixin root-buttons 
-    ($decrement-factor: 0.8,   // modifier for smaller button sizes
-     $increment-factor: 1.25,  // modifier for bigger button sizes
+    ($btn-size-factor: 1.25,  // modifier for bigger button sizes
      $btn-border-radius: 4px,  // global button border radius
      $btn-font-weight: 300)    // global button font weight
 {   
-    --btn-decrement-factor: #{$decrement-factor};
-    --btn-increment-factor: #{$increment-factor};
+    --btn-size-factor: #{$btn-size-factor};
     --btn-font-weight: #{$btn-font-weight};
-    --btn-xxs: calc(var(--btn-xs) * var(--btn-decrement-factor));
-    --btn-xs: calc(var(--btn-sm) * var(--btn-decrement-factor));
-    --btn-sm: calc(var(--btn-md) * var(--btn-decrement-factor));
+    --btn-xxs: calc(var(--btn-xs) / var(--btn-size-factor));
+    --btn-xs: calc(var(--btn-sm) / var(--btn-size-factor));
+    --btn-sm: calc(var(--btn-md) / var(--btn-size-factor));
     --btn-md: var(--base-font-size);
-    --btn-lg: calc(var(--btn-md) * var(--btn-increment-factor));
-    --btn-xl: calc(var(--btn-lg) * var(--btn-increment-factor));
-    --btn-xxl: calc(var(--btn-xl) * var(--btn-increment-factor));
+    --btn-lg: calc(var(--btn-md) * var(--btn-size-factor));
+    --btn-xl: calc(var(--btn-lg) * var(--btn-size-factor));
+    --btn-xxl: calc(var(--btn-xl) * var(--btn-size-factor));
     --btn-font-size: var(--btn-md);
     --btn-border-radius: #{$btn-border-radius};
     --btn-border-width: #{$btn-border-width};
 }
 
 .btn {
+    // removes transparent overlay displayed when tapping on a button on an iOS touch device
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     --btn-color: var(--dark-color);
     --btn-text-color: var(--light-color);
     position: relative;
     padding: calc(var(--btn-font-size) * 0.75) calc(var(--btn-font-size) * 2);
     color: var(--btn-color);
-    font-weight: var(--btn-font-weight); //;
+    font-weight: var(--btn-font-weight); 
     border: none;
     border-radius: var(--btn-border-radius);
     font-family: var(--primary-font);

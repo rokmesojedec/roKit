@@ -40,10 +40,65 @@
     </header>
     <section class="shadow-6 relative z-2 p-y-8" id="buttons">
         <div class="max-width-center-xxl">
-            <h1 class="slide-left-delay-1 text-shadow-left">Ro:Kit Buttons</h1>
-            <p>Buttons, buttons, buttons! So many buttons to choose from and they're all so satisfying to click on.</p>
-            <p>Go ahead click on a few. They don't do anything - they're here just for the show.</p>
-            <table class="responsive-table-xl first-col-heading m-t-4 children-slide-down">
+            <div class="grid grid-col-span-12 grid-md-col-span-6 children-slide-down">
+                <div class="col-md-span-12">
+                    <h1 class="slide-left-delay-1 text-shadow-left">ro:Kit Buttons</h1>
+                    <p>Buttons, buttons, buttons! So many buttons to choose from and they're all so satisfying to click
+                        on.</p>
+                    <p>Go ahead click on a few. They don't do anything - they're here just for the show.</p>
+                </div>
+                <div>
+                    <h2>Button Class</h2>
+                    <p>You can turn any HTML element into a button by adding <span class="code-inline">.btn</span>
+                        attribute to it. However, for the sake of semantic code I would recommend adding <span
+                            class="code-inline">.btn</span> only to <span class="code-inline">&#x3C;button&#x3E;</span>
+                        and <span class="code-inline">&#x3C;a&#x3E;</span> tags.
+                    </p>
+                </div>
+                <div>
+                    <h2>Styling</h2>
+                    <p>You can further style your new button by adding <a
+                            href="styling.html#text-colors">text-color</a>, <a
+                            href="styling.html#backgrounds">background</a>, <a
+                            href="styling.html#gradients">gradient</a> and / or button style classes like <span
+                            class="code-inline">.flat .raised .outline</span>
+                    </p>
+                </div>
+                <div>
+                    <h2>Size Modifiers</h2>
+                    <p>The syntax of size class is <span class="code-inline">.btn-[btn-size]</span> with following
+                        button sizes <span class="code-inline">xxs, xs, sm, md, lg, xl, xxl</span> to change the size of
+                        your button. The default size is <span class="code-inline">md</span> and each subsequent and
+                        preceding size is modified by factor of <span class="code-inline">1.25</span>.
+                    </p>
+                </div>
+                <div>
+                    <h2>Responisve Modifiers</h2>
+                    <p>You can add responsive classes to change the size of your button when reaching a certain
+                        breakpoint.</p>
+                    <p>The syntax of responsive class is <span class="code-inline">.btn-[breakpoint]-[btn-size]</span>
+                        with following button sizes <span class="code-inline">xxs, xs, sm, md, lg, xl, xxl</span> and <a
+                            href="layout.html#breakpoints">breakpoints sizes.</a></p>
+                    </p>
+                </div>
+                <div class="col-md-span-12">
+                    <h3>ro:Kit Button Examples</h3>
+                    <div class="grid grid-col-span-6">
+                        <div>
+                            <code
+                                class="gradient-success-warning">&#x3C;button class=&#x22;btn raised gradient-secondary-primary btn-lg-xxl&#x22;&#x3E;btn-md-xxl&#x3C;/button&#x3E;</code>
+                        </div>
+                        <div class="text-center">
+                            <div>The button below will increase size to <span class="code-inline">.btn-xxl</span> once
+                                screen size exceeds the lg breakpoint (992px).</div>
+                            <button class="btn raised gradient-secondary-primary btn-lg-xxl">.btn-lg-xxl</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="warning shadow-4 p-3"><strong>Tip:</strong> Hover over the buttons to see the classes used to
+                create them</p>
+            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast">
                 <thead>
                     <tr>
                         <th></th>
@@ -51,69 +106,179 @@
                         <th>Primary</th>
                         <th>Secondary</th>
                         <th>Warning</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th scope="row">Flat</th>
+                    <td><span data-tooltip-bottom="class='btn flat'"><button class="btn flat">Deafult</button></span>
+                    </td>
+                    <td><span data-tooltip-bottom="class='btn text-primary flat'"><button
+                                class="btn text-primary flat">Primary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-secondary flat'"><button
+                                class="btn text-secondary flat">Secondary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn text-warning flat'"><button
+                                class="btn text-warning flat">Warning</button></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Default</th>
+                    <td><span data-tooltip-bottom="class='btn'"><button class="btn">Deafult</button></span>
+                    </td>
+                    <td><span data-tooltip-bottom="class='btn primary'"><button
+                                class="btn primary">Primary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn secondary'"><button
+                                class="btn secondary">Secondary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn warning'"><button
+                                class="btn warning">Warning</button></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Raised</th>
+                    <td><span data-tooltip-bottom="class='btn raised'"><button
+                                class="btn raised">Deafult</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn raised primary'"><button
+                                class="btn raised primary">Primary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn raised secondary'"><button
+                                class="btn raised secondary">Secondary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn raised warning'"><button
+                                class="btn raised warning">Warning</button></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Outline</th>
+                    <td><span data-tooltip-bottom="class='btn outline text-dark'"><button
+                                class="btn outline text-dark">Deafult</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn outline text-primary'"><button
+                                class="btn outline text-primary">Primary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn outline text-secondary'"><button
+                                class="btn outline text-secondary">Secondary</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn outline text-warning'"><button
+                                class="btn outline text-warning">Warning</button></span></td>
+                </tr>
+            </table>
+            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast">
+                <thead>
+                    <tr>
+                        <th></th>
                         <th>Danger</th>
                         <th>Success</th>
                         <th>Disabled</th>
                         <th>Link</th>
                     </tr>
                 </thead>
-                <tr class="children-slide-down">
+                <tr>
                     <th scope="row">Flat</th>
-                    <td><span data-tooltip-bottom="class='btn flat'"><button
-                                class="btn btn-xl-sm flat">Deafult</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn text-primary flat'"><button
-                                class="btn btn-xl-sm text-primary flat">Primary</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn text-secondary flat'"><button
-                                class="btn btn-xl-sm text-secondary flat">Secondary</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn text-warning flat'"><button
-                                class="btn btn-xl-sm text-warning flat">Warning</button></span></td>
                     <td><span data-tooltip-bottom="class='btn text-danger flat'"><button
-                                class="btn btn-xl-sm text-danger flat">Danger</button></span></td>
+                                class="btn text-danger flat">Danger</button></span></td>
                     <td><span data-tooltip-bottom="class='btn text-success flat'"><button
-                                class="btn btn-xl-sm text-success flat">Success</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn flat' disabled"><button class="btn btn-xl-sm flat"
+                                class="btn text-success flat">Success</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn flat' disabled"><button class="btn flat"
                                 disabled>Disabled</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn flat'"><a class="btn btn-xl-sm flat">Link</a></span></td>
+                    <td><span data-tooltip-bottom="class='btn flat'"><a class="btn flat">Link</a></span></td>
                 </tr>
-                <tr class="children-slide-down">
+                <tr>
                     <th scope="row">Default</th>
-                    <td><span data-tooltip-bottom="class='btn'"><button class="btn btn-xl-sm">Deafult</button></span>
+                    <td><span data-tooltip-bottom="class='btn danger'"><button class="btn danger">Danger</button></span>
                     </td>
-                    <td><span data-tooltip-bottom="class='btn primary'"><button
-                                class="btn btn-xl-sm primary">Primary</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn secondary'"><button
-                                class="btn btn-xl-sm secondary">Secondary</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn warning'"><button
-                                class="btn btn-xl-sm warning">Warning</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn danger'"><button
-                                class="btn btn-xl-sm danger">Danger</button></span></td>
                     <td><span data-tooltip-bottom="class='btn success'"><button
-                                class="btn btn-xl-sm success">Success</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn' disabled"><button class="btn btn-xl-sm"
+                                class="btn success">Success</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn' disabled"><button class="btn"
                                 disabled>Disabled</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn'"><a class="btn btn-xl-sm">Link</a></span></td>
+                    <td><span data-tooltip-bottom="class='btn'"><a class="btn">Link</a></span></td>
                 </tr>
-                <tr class="children-slide-down">
+                <tr>
                     <th scope="row">Raised</th>
-                    <td><button class="btn btn-xl-sm raised">Deafult</button></td>
-                    <td><button class="btn btn-xl-sm raised primary">Primary</button></td>
-                    <td><button class="btn btn-xl-sm raised secondary">Secondary</button></td>
-                    <td><button class="btn btn-xl-sm raised warning">Warning</button></td>
-                    <td><button class="btn btn-xl-sm raised danger">Danger</button></td>
-                    <td><button class="btn btn-xl-sm raised success">Success</button></td>
-                    <td><button class="btn btn-xl-sm raised" disabled>Disabled</button></td>
-                    <td><a class="btn btn-xl-sm raised">Link</a></td>
+                    <td><span data-tooltip-bottom="class='btn raised danger'"><button
+                                class="btn raised danger">Danger</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn raised success'"><button
+                                class="btn raised success">Success</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn raised' disabled"><button class="btn raised"
+                                disabled>Disabled</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn raised'"><a class="btn raised">Link</a></span></td>
                 </tr>
-                <tr class="children-slide-down">
+                <tr>
                     <th scope="row">Outline</th>
-                    <td><button class="btn btn-xl-sm outline text-dark">Deafult</button></td>
-                    <td><button class="btn btn-xl-sm outline text-primary">Primary</button></td>
-                    <td><button class="btn btn-xl-sm outline text-secondary">Secondary</button></td>
-                    <td><button class="btn btn-xl-sm outline text-warning">Warning</button></td>
-                    <td><button class="btn btn-xl-sm outline text-danger">Danger</button></td>
-                    <td><button class="btn btn-xl-sm outline text-success">Success</button></td>
-                    <td><button class="btn btn-xl-sm outline " disabled>Disabled</button></td>
-                    <td><a class="btn btn-xl-sm outline">Link</a></td>
+                    <td><span data-tooltip-bottom="class='btn outline text-danger'"><button
+                                class="btn outline text-danger">Danger</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn outline text-success'"><button
+                                class="btn outline text-success">Success</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn outline' disabled"><button class="btn outline "
+                                disabled>Disabled</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn outline'"><a class="btn outline">Link</a></span></td>
+                </tr>
+            </table>
+            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Primary</th>
+                        <th>Secondary</th>
+                        <th>Success</th>
+                        <th>Warning</th>
+                        <th>Danger</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th scope="row">Primary</th>
+                    <td><span data-tooltip-bottom="class='btn primary'"><button
+                                class="btn primary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-primary-secondary'"><button
+                                class="btn gradient-primary-secondary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-primary-success'"><button
+                                class="btn gradient-primary-success">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-primary-warning'"><button
+                                class="btn gradient-primary-warning">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-primary-danger'"><button
+                                class="btn gradient-primary-danger">Button</button></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Secondary</th>
+                    <td><span data-tooltip-bottom="class='btn gradient-secondary-primary'"><button
+                                class="btn gradient-secondary-primary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn secondary'"><button
+                                class="btn secondary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-secondary-success'"><button
+                                class="btn gradient-secondary-success">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-secondary-warning'"><button
+                                class="btn gradient-secondary-warning">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-secondary-danger'"><button
+                                class="btn gradient-secondary-danger">Button</button></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Success</th>
+                    <td><span data-tooltip-bottom="class='btn gradient-success-primary'"><button
+                                class="btn gradient-success-primary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-success-secondary'"><button
+                                class="btn gradient-success-secondary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn success'"><button
+                                class="btn success">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-success-warning'"><button
+                                class="btn gradient-success-warning">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-success-danger'"><button
+                                class="btn gradient-success-danger">Button</button></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Warning</th>
+                    <td><span data-tooltip-bottom="class='btn gradient-warning-primary'"><button
+                                class="btn gradient-warning-primary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-warning-secondary'"><button
+                                class="btn gradient-warning-secondary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-warning-success'"><button
+                                class="btn gradient-warning-success">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn warning'"><button
+                                class="btn warning">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-warning-danger'"><button
+                                class="btn gradient-warning-danger">Button</button></span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Danger</th>
+                    <td><span data-tooltip-bottom="class='btn gradient-danger-primary'"><button
+                                class="btn gradient-danger-primary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-danger-secondary'"><button
+                                class="btn gradient-danger-secondary">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-danger-success'"><button
+                                class="btn gradient-danger-success">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn gradient-danger-warning'"><button
+                                class="btn gradient-danger-warning">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn danger'"><button
+                                class="btn danger">Button</button></span></td>
                 </tr>
             </table>
         </div>
@@ -131,11 +296,11 @@
             <div class="grid grid-col-span-12 grid-xl-col-span-6 p-x-md-10">
                 <div>
                     <p>Tooltips are fun! Ro:Kit makes it very easy to add a tooltip to your site.</p>
-                    <p>Just add <code class="inline white">data-tooltip-[top|left|bottom|right]="lorem ipsum"</code> to
+                    <p>Just add <span class="code-inline">data-tooltip-[top|left|bottom|right]="lorem ipsum"</span> to
                         your
                         HTML tag and the tooltip will appear when hovered over.</p>
-                    <p>If you want to display the tooltip without hovering over the element just add <code
-                            class="inline white">class="static-tooltip"</code> to the tag with tooltip data attribute.
+                    <p>If you want to display the tooltip without hovering over the element just add <span
+                            class="code-inline">class="static-tooltip"</span> to the tag with tooltip data attribute.
                     </p>
                 </div>
                 <div>
@@ -200,81 +365,59 @@
             </div>
         </div>
     </section>
-    <section class="children-p-0">
-        <div class="max-width-center-xxl children-p-x-0">
-            <h1 class="slide-left-delay-1">Box Shadows</h1>
-            <p>I did this crazy thing with box-shadows - I created a mixin which scales shadows based on a numeric
-                scale.
-                Similar to how headings and fonts scale.</p>
-            <p class="m-b-2"> The default scale used is the <strong>Augmented Fourth (1.414)</strong>.</p>
-            <div class="grid 
-                    grid-col-span-2 
-                    grid-xs-col-span-12 
-                    grid-sm-col-span-6 
-                    grid-md-col-span-4 
-                    p-0
-                    children-p-0 
-                    gap-2 
-                    children-slide-up">
-                <div>
-                    <div class="card gradient-primary-light-secondary shadow-1">
-                        <h2>Shadow 1</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card shadow-2">
-                        <h2>Shadow 2</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card shadow-3">
-                        <h2>Shadow 3</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card shadow-4">
-                        <h2>Shadow 4</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card shadow-5">
-                        <h2>Shadow 5</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card shadow-6">
-                        <h2>Shadow 6</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card shadow-7">
-                        <h2>Shadow 7</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card shadow-8">
-                        <h2>Shadow 8</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="card shadow-9">
-                        <h2>Shadow 9</h2>
-                        <p>lorem ipsum</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer class="p-y-3 font-scale-minor-second code">
         <div class="max-width-center-xxl">
+            <nav class="p-sm-3 p-xs-3 p-md-3 p-lg-0  font-scale-minor-second max-width-center-xxl nav-flex">
+                <ul class=" children-p-sm-1 justify-content-space-between text-warning">
+                    <li><a href="index.html" class="active">Home</a>
+                        <ul class="text-light">
+                            <li><a href="index.html#intro">Intro</a></li>
+                            <li><a href="index.html#howto">How to ?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="animations.html">Animations</a>
+                        <ul class="text-light">
+                            <li><a href="animations.html#fadein">Fade Ins</a></li>
+                            <li><a href="animations.html#shadows">Shadows</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="styling.html">Colors & Styling</a>
+                        <ul class="text-light">
+                            <li><a href="styling.html#color">Colors</a></li>
+                            <li><a href="styling.html#gradients">Gradients</a></li>
+                            <li><a href="styling.html#shadows">Shadows</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="layout.html">Layout</a>
+                        <ul class="text-light">
+                            <li><a href="layout.html#breakpoints">Breakpoints</a></li>
+                            <li><a href="layout.html#grid">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ui.html">UI Components</a>
+                        <ul class="text-light">
+                            <li><a href="ui.html#buttons">Buttons</a></li>
+                            <li><a href="ui.html#cards">Cards</a></li>
+                            <li><a href="ui.html#navigation">Navigation</a></li>
+                            <li><a href="ui.html#jumbo">Jumbo</a></li>
+                            <li><a href="ui.html#tooltips">Tooltips</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="utilities.html">Utilities</a>
+                        <ul class="text-light">
+                            <li><a href="utilities.html#visibility">Visibility</a></li>
+                            <li><a href="utilities.html#whitespace">Whitespace</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="typography.html">Typography</a>
+                        <ul class="text-light">
+                            <li><a href="typography.html#scales">Font Scales</a></li>
+                            <li><a href="typography.html#headings">Headings</a></li>
+                            <li><a href="typography.html#typefaces">Typefaces</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             &#169; 2021 <a href="mailto:rok@mesojedec.io" class="link-warning">Rok Mesojedec</a>. All
             rights reserved.
         </div>
