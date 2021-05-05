@@ -18,23 +18,56 @@
              children-p-x-4
              children-p-y-6">
     <header class="p-y-0 slide-down-delay-1 fixed-lg full-width z-3 top white shadow-9">
-        <nav class="p-sm-3 p-xs-3 p-md-3 p-lg-0 nav-lg font-scale-minor-second max-width-center-xxl">
+        <nav class="nav-flex p-sm-3 p-xs-3 p-md-3 p-lg-0 nav-lg font-scale-minor-second max-width-center-xxl">
             <a href="index.html" class="branding relative">ro:Kit<span class="logo">&#129304;</span></a>
             <ul class=" children-p-sm-1 margin-left-auto">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#nav">Animations</a></li>
-                <li><a href="styling.html">Colors & Styling</a></li>
-                <li><a href="#layout">Layout</a></li>
+                <li><a href="index.html">Home</a>
+                    <ul class="white p-1 shadow-lg-9">
+                        <li><a href="index.html#intro">Intro</a></li>
+                        <li><a href="index.html#howto">How to ?</a></li>
+                    </ul>
+                </li>
+                <li><a href="animations.html">Animations</a>
+                    <ul class="white p-1 shadow-lg-9">
+                        <li><a href="animations.html#fadein">Fade Ins</a></li>
+                        <li><a href="animations.html#shadows">Shadows</a></li>
+                    </ul>
+                </li>
+                <li><a href="styling.html">Colors & Styling</a>
+                    <ul class="white p-1 shadow-lg-9">
+                        <li><a href="styling.html#color">Colors</a></li>
+                        <li><a href="styling.html#gradients">Gradients</a></li>
+                        <li><a href="styling.html#shadows">Shadows</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</a>
+                    <ul class="white p-1 shadow-lg-9">
+                        <li><a href="layout.html#breakpoints">Breakpoints</a></li>
+                        <li><a href="layout.html#grid">Grid</a></li>
+                    </ul>
+                </li>
                 <li><a href="ui.html" class="active">UI Components</a>
-                    <ul class="white p-1 shadow-9">
+                    <ul class="white p-1 shadow-lg-9">
                         <li><a href="ui.html#buttons">Buttons</a></li>
                         <li><a href="ui.html#cards">Cards</a></li>
+                        <li><a href="ui.html#navigation">Navigation</a></li>
                         <li><a href="ui.html#jumbo">Jumbo</a></li>
                         <li><a href="ui.html#tooltips">Tooltips</a></li>
                     </ul>
                 </li>
-                <li><a href="#nav">Utilities</a></li>
-                <li><a href="typography.html">Typography</a></li>
+                <li><a href="utilities.html">Utilities</a>
+                    <ul class="white p-1 shadow-lg-9">
+                        <li><a href="utilities.html#visibility">Visibility</a></li>
+                        <li><a href="utilities.html#whitespace">Whitespace</a></li>
+                    </ul>
+                </li>
+                <li><a href="typography.html">Typography</a>
+                    <ul class="white p-1 shadow-lg-9">
+                        <li><a href="typography.html#scales">Font Scales</a></li>
+                        <li><a href="typography.html#headings">Headings</a></li>
+                        <li><a href="typography.html#typefaces">Typefaces</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -83,7 +116,7 @@
                 </div>
                 <div class="col-md-span-12">
                     <h3>ro:Kit Button Examples</h3>
-                    <div class="grid grid-col-span-6">
+                    <div class="grid grid-col-span-12 col-md-span-6">
                         <div>
                             <code
                                 class="gradient-success-warning">&#x3C;button class=&#x22;btn raised gradient-secondary-primary btn-lg-xxl&#x22;&#x3E;btn-md-xxl&#x3C;/button&#x3E;</code>
@@ -394,7 +427,7 @@
                             <li><a href="layout.html#grid">Grid</a></li>
                         </ul>
                     </li>
-                    <li><a href="ui.html">UI Components</a>
+                    <li><a href="ui.html" class="active">UI Components</a>
                         <ul class="text-light">
                             <li><a href="ui.html#buttons">Buttons</a></li>
                             <li><a href="ui.html#cards">Cards</a></li>
