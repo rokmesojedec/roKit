@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ro:Kit - Web Responsive Design Framework</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <title>ro:Kit - Responsive Kit</title>
     <link rel="stylesheet" href="css/roKit.css">
     <link rel="stylesheet" href="css/ui.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -106,7 +108,7 @@
                     </p>
                 </div>
                 <div>
-                    <h2>Responisve Modifiers</h2>
+                    <h2>Responsive Modifiers</h2>
                     <p>You can add responsive classes to change the size of your button when reaching a certain
                         breakpoint.</p>
                     <p>The syntax of responsive class is <span class="code-inline">.btn-[breakpoint]-[btn-size]</span>
@@ -310,12 +312,136 @@
                                 class="btn gradient-danger-success">Button</button></span></td>
                     <td><span data-tooltip-bottom="class='btn gradient-danger-warning'"><button
                                 class="btn gradient-danger-warning">Button</button></span></td>
-                    <td><span data-tooltip-bottom="class='btn danger'"><button
-                                class="btn danger">Button</button></span></td>
+                    <td><span data-tooltip-bottom="class='btn danger'"><button class="btn danger">Button</button></span>
+                    </td>
                 </tr>
             </table>
         </div>
     </section>
+    <section id="navigation" class="
+    p-y-8
+    children-p-0
+    shadow-6 
+    relative z-1
+    text-dark
+    primary
+   ">
+        <div class="max-width-center-xxl ">
+            <div class="grid grid-col-span-12 children-slide-down">
+                <h1>ro:Kit Navgiation</h1>
+                <p>
+                    Every site needs navigation - ro:Kit provides it as well with the following features: CSS only drop
+                    downs, responsive collapsible navigation.
+                </p>
+                <h2>Navigation Classes</h2>
+                <p>
+                    Use <span class="code-inline">.nav-&lt;breakpoint&gt;</span> to set a breakpoint below which the navigation collpases into block or flex if <span class="code-inline">.nav-flex</span> is applied.
+                    When the navigation is collpased, the nested dropdown content will also be displayed.
+                </p>
+                <h2>Navigation Code Template</h2>
+                <p>
+                    <code class="gradient-danger-warning">&lt;nav class=&quot;[nav-flex|nav-light|center] [nav-&lt;breakpoint-size&gt;]&quot;&gt;
+    &lt;a href=&quot;branding&quot;&gt;My Branding&lt;/a&gt;
+    &lt;!-- site navigation links --&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;active&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link 2&lt;/a&gt;
+            &lt;!-- Nested unordered list will turn into a dropdown - which is displayed as block when navigation collapses --&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;&quot;&gt;Sublink 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;&quot;&gt;Sublink 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code>
+                </p>
+                <h2>Navigation Example</h2>
+                <div class="full-width">
+                    <nav class="nav-md ">
+                        <a href="" class="branding">My Branding</a>
+                        <!-- site navigation links -->
+                        <ul class="">
+                            <li><a href="" class="active">Link 1</a></li>
+                            <li><a href="">Link 2</a>
+                                <!-- Nested unordered list will turn into a dropdown - which is displayed as block when navigation collapses -->
+                                <ul>
+                                    <li><a href="">Sublink 1</a></li>
+                                    <li><a href="">Sublink 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Link 3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="jumbo" class="
+                p-y-8
+                children-p-0
+                
+                shadow-6 
+                relative z-1
+                text-dark
+               ">
+        <div class="max-width-center-xxl ">
+            <div class="grid grid-col-span-12 children-slide-down">
+                <div class="col-span-12">
+                    <h1>ro:Kit Jumbo</h1>
+                    <p>
+                        You want to make something stand out on your website? Use a jumbo!
+                        ro:Kit jumbo supports covers, which can be generated with bg-image mixin. Golden
+                        ratio placement of content (38.2%) left and right is supported. You can place an
+                        image element in the jumb and it will be resized to match width, however using
+                        covers will produce better results.
+                        You can use any ro:Kit <span class="code-inline">size, color, gradient,
+                            fontscale</span> and <span class="code-inline">whitespace</span> modifiers on
+                        the jumbo.
+                    </p>
+                    <p>
+                    <h2>Jumbo Template</h2>
+                    <code class="gradient-warning-primary">&lt;div class=&quot;jumbo ?[golden-ratio-left|golden-ratio-right]&quot;&gt;
+    &lt;!-- Optional Cover --&gt;
+    &lt;div class=&quot;cover-class&quot;&gt;&lt;/div&gt;
+    &lt;!-- Optional Overlay --&gt;
+    &lt;div class=&quot;overlay overlay-gradient-[top|left|bottom|right|]&quot;&gt;&lt;/div&gt;
+    &lt;!-- Optional Image --&gt;
+    &lt;!-- Will resize image to fit the jumbo width--&gt;
+    &lt;img src=&quot;img/myimage.png&quot; /&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;!-- place your content here --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                    </p>
+                </div>
+                <div>
+                    <h1>How to Use an Image as Jumbo Background</h1>
+                    <p>
+                        Use <span class="code-inline">bg-image($img-url, $class-name)</span> mixin located
+                        in <span class="code-inline">src/scss/components/_jumbo.scss</span> to creat your
+                        own jumbo class
+                        with an image url.
+                    </p>
+                    <p>Example below was generated with following code <span class="code-inline">@include
+                            jumbo.bg-image("../img/Goriska_brda.jpg", "goriska-brda");</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="jumbo slide-left-delay-2 font-scale-minor-third 
+    font-scale-md-major-third 
+    font-scale-xl-perfect-fourth vh-60">
+        <!-- Optional Overlay -->
+        <div class='goriska-brda'></div>
+        <div class="overlay overlay-gradient-top"></div>
+        <div class="content text-left">
+            <h1 class="m-b-0">Goriška Brda</h1>
+            <p class="text-warning">Source: <a
+                    href="https://commons.wikimedia.org/wiki/File:Goriska_brda.jpg">Wikimedia</a></p>
+            <!-- place your content here -->
+        </div>
+    </div>
     <section id="tooltips" class="
                p-y-8
                children-p-0
@@ -329,20 +455,24 @@
             <div class="grid grid-col-span-12 grid-xl-col-span-6 p-x-md-10">
                 <div>
                     <p>Tooltips are fun! Ro:Kit makes it very easy to add a tooltip to your site.</p>
-                    <p>Just add <span class="code-inline">data-tooltip-[top|left|bottom|right]="lorem ipsum"</span> to
+                    <p>Just add <span class="code-inline">data-tooltip-[top|left|bottom|right]="lorem
+                            ipsum"</span> to
                         your
                         HTML tag and the tooltip will appear when hovered over.</p>
                     <p>If you want to display the tooltip without hovering over the element just add <span
-                            class="code-inline">class="static-tooltip"</span> to the tag with tooltip data attribute.
+                            class="code-inline">class="static-tooltip"</span> to the tag with tooltip data
+                        attribute.
                     </p>
                 </div>
                 <div>
-                    <div class="card align-vertically">
-                        <p class="warning shadow-4 p-3"><strong>Caveat:</strong> when adding tooltips to Ro:Kit buttons
+                    <div class="card align-vertically no-shadow">
+                        <p class="warning shadow-4 p-3"><strong>Caveat:</strong> when adding tooltips to
+                            Ro:Kit buttons
                             (or
                             any
                             elements using
-                            ::before and ::after pseudo selectors) you should warp those elements in an inline-block
+                            ::before and ::after pseudo selectors) you should warp those elements in an
+                            inline-block
                             element
                             and add
                             the tooltip data attribute to the wrapper.</p>
@@ -398,6 +528,7 @@
             </div>
         </div>
     </section>
+
     <footer class="p-y-3 font-scale-minor-second code">
         <div class="max-width-center-xxl">
             <nav class="p-sm-3 p-xs-3 p-md-3 p-lg-0  font-scale-minor-second max-width-center-xxl nav-flex">

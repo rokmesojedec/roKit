@@ -5,6 +5,11 @@
         padding: 0 var(--unit);
     }
 
+
+    &.shadow {
+        @extend .shadow-6;
+    }
+
     &.justify-content-vertically {
         display: flex;
         flex-direction: column;
