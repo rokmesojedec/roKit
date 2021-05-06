@@ -51,7 +51,6 @@
                 <li><a href="ui.html" class="active">UI Components</a>
                     <ul class="white p-1 shadow-lg-9">
                         <li><a href="ui.html#buttons">Buttons</a></li>
-                        <li><a href="ui.html#cards">Cards</a></li>
                         <li><a href="ui.html#navigation">Navigation</a></li>
                         <li><a href="ui.html#jumbo">Jumbo</a></li>
                         <li><a href="ui.html#tooltips">Tooltips</a></li>
@@ -118,7 +117,7 @@
                 </div>
                 <div class="col-md-span-12">
                     <h3>ro:Kit Button Examples</h3>
-                    <div class="grid grid-col-span-12 col-md-span-6">
+                    <div class="grid grid-col-span-12 grid-md-col-span-6">
                         <div>
                             <code
                                 class="gradient-success-warning">&#x3C;button class=&#x22;btn raised gradient-secondary-primary btn-lg-xxl&#x22;&#x3E;btn-md-xxl&#x3C;/button&#x3E;</code>
@@ -131,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <p class="warning shadow-4 p-3"><strong>Tip:</strong> Hover over the buttons to see the classes used to
+            <p class="warning shadow-4 p-3 m-x-4 slide-down-delay-7"><strong>Tip:</strong> Hover over the buttons to see the classes used to
                 create them</p>
             <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast">
                 <thead>
@@ -340,7 +339,7 @@
                 </p>
                 <h2>Navigation Code Template</h2>
                 <p>
-                    <code class="gradient-danger-warning">&lt;nav class=&quot;[nav-flex|nav-light|center] [nav-&lt;breakpoint-size&gt;]&quot;&gt;
+                    <code class="gradient-danger-warning">&lt;nav class=&quot;[?nav-flex|?nav-light|?center] [?nav-&lt;breakpoint-size&gt;]&quot;&gt;
     &lt;a href=&quot;branding&quot;&gt;My Branding&lt;/a&gt;
     &lt;!-- site navigation links --&gt;
     &lt;ul&gt;
@@ -358,19 +357,19 @@
                 </p>
                 <h2>Navigation Example</h2>
                 <div class="full-width">
-                    <nav class="nav-md ">
-                        <a href="" class="branding">My Branding</a>
+                    <nav class="nav-md">
+                        <a href="#" class="branding">My Branding</a>
                         <!-- site navigation links -->
-                        <ul class="">
-                            <li><a href="" class="active">Link 1</a></li>
-                            <li><a href="">Link 2</a>
+                        <ul class="#">
+                            <li><a href="#" class="active">Link 1</a></li>
+                            <li><a href="#">Link 2</a>
                                 <!-- Nested unordered list will turn into a dropdown - which is displayed as block when navigation collapses -->
                                 <ul>
-                                    <li><a href="">Sublink 1</a></li>
-                                    <li><a href="">Sublink 2</a></li>
+                                    <li><a href="#">Sublink 1</a></li>
+                                    <li><a href="#">Sublink 2</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Link 3</a></li>
+                            <li><a href="#">Link 3</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -401,7 +400,7 @@
                     </p>
                     <p>
                     <h2>Jumbo Template</h2>
-                    <code class="gradient-warning-primary">&lt;div class=&quot;jumbo ?[golden-ratio-left|golden-ratio-right]&quot;&gt;
+                    <code class="gradient-warning-primary">&lt;div class=&quot;jumbo [?golden-ratio-left|?golden-ratio-right]&quot;&gt;
     &lt;!-- Optional Cover --&gt;
     &lt;div class=&quot;cover-class&quot;&gt;&lt;/div&gt;
     &lt;!-- Optional Overlay --&gt;
@@ -561,7 +560,6 @@
                     <li><a href="ui.html" class="active">UI Components</a>
                         <ul class="text-light">
                             <li><a href="ui.html#buttons">Buttons</a></li>
-                            <li><a href="ui.html#cards">Cards</a></li>
                             <li><a href="ui.html#navigation">Navigation</a></li>
                             <li><a href="ui.html#jumbo">Jumbo</a></li>
                             <li><a href="ui.html#tooltips">Tooltips</a></li>
