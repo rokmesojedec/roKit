@@ -407,7 +407,6 @@ table.first-col-heading tr th:first-child {
 
 /* Source: https://getbootstrap.com/docs/5.0/layout/breakpoints/         */
 nav ul li a, .branding {
-  white-space: nowrap;
   border: none;
   color: inherit !important;
   text-decoration: none;
@@ -440,10 +439,28 @@ nav {
   padding: 0;
   align-items: center;
 }
-nav.nav-flex > ul, nav > ul.nav-flex {
+nav.nav-flex > ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+nav.nav-flex > ul > li {
+  width: 10rem;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: calc(3 * var(--unit));
+  margin-right: var(--unit);
+}
+nav.nav-flex > ul > li ul li {
+  font-weight: initial;
+  text-transform: initial;
+}
+nav.nav-flex > ul ul, nav.nav-flex > ul ul li {
+  padding-left: 0;
+  padding-bottom: 0;
 }
 nav.center ul {
   justify-content: center;
@@ -487,6 +504,17 @@ nav ul li ul li a {
   }
   nav.nav-xs > ul {
     display: flex;
+    flex-wrap: initial;
+  }
+  nav.nav-xs > ul li {
+    margin: 0;
+    padding: var(--unit);
+    width: initial;
+    font-weight: initial;
+    text-transform: initial;
+  }
+  nav.nav-xs > ul li a {
+    white-space: nowrap;
   }
   nav.nav-xs > ul li:first-child {
     padding-left: var(--unit);
@@ -514,6 +542,17 @@ nav ul li ul li a {
   }
   nav.nav-sm > ul {
     display: flex;
+    flex-wrap: initial;
+  }
+  nav.nav-sm > ul li {
+    margin: 0;
+    padding: var(--unit);
+    width: initial;
+    font-weight: initial;
+    text-transform: initial;
+  }
+  nav.nav-sm > ul li a {
+    white-space: nowrap;
   }
   nav.nav-sm > ul li:first-child {
     padding-left: var(--unit);
@@ -541,6 +580,17 @@ nav ul li ul li a {
   }
   nav.nav-md > ul {
     display: flex;
+    flex-wrap: initial;
+  }
+  nav.nav-md > ul li {
+    margin: 0;
+    padding: var(--unit);
+    width: initial;
+    font-weight: initial;
+    text-transform: initial;
+  }
+  nav.nav-md > ul li a {
+    white-space: nowrap;
   }
   nav.nav-md > ul li:first-child {
     padding-left: var(--unit);
@@ -568,6 +618,17 @@ nav ul li ul li a {
   }
   nav.nav-lg > ul {
     display: flex;
+    flex-wrap: initial;
+  }
+  nav.nav-lg > ul li {
+    margin: 0;
+    padding: var(--unit);
+    width: initial;
+    font-weight: initial;
+    text-transform: initial;
+  }
+  nav.nav-lg > ul li a {
+    white-space: nowrap;
   }
   nav.nav-lg > ul li:first-child {
     padding-left: var(--unit);
@@ -595,6 +656,17 @@ nav ul li ul li a {
   }
   nav.nav-xl > ul {
     display: flex;
+    flex-wrap: initial;
+  }
+  nav.nav-xl > ul li {
+    margin: 0;
+    padding: var(--unit);
+    width: initial;
+    font-weight: initial;
+    text-transform: initial;
+  }
+  nav.nav-xl > ul li a {
+    white-space: nowrap;
   }
   nav.nav-xl > ul li:first-child {
     padding-left: var(--unit);
@@ -622,6 +694,17 @@ nav ul li ul li a {
   }
   nav.nav-xxl > ul {
     display: flex;
+    flex-wrap: initial;
+  }
+  nav.nav-xxl > ul li {
+    margin: 0;
+    padding: var(--unit);
+    width: initial;
+    font-weight: initial;
+    text-transform: initial;
+  }
+  nav.nav-xxl > ul li a {
+    white-space: nowrap;
   }
   nav.nav-xxl > ul li:first-child {
     padding-left: var(--unit);

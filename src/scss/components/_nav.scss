@@ -1,7 +1,6 @@
 @use "breakpoints";
 
 %navAnchorOverride {
-    white-space: nowrap;
     border: none;
     &:hover,
     a:hover {
@@ -39,10 +38,30 @@ nav {
     margin: 0;
     padding: 0;
     align-items: center;
-    &.nav-flex > ul, & > ul.nav-flex{
+    &.nav-flex > ul{
+        & > li { 
+            width: 10rem;
+            padding: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: calc(3 * var(--unit));
+            margin-right: var(--unit);
+            ul {
+                li {
+                    font-weight: initial;
+                    text-transform: initial;
+                }
+            }
+        }
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
+        padding-left: 0;
+        padding-bottom: 0;
+        ul, ul li {
+            padding-left: 0;
+            padding-bottom: 0;
+        }
     }
     &.center ul {
         justify-content: center;
@@ -92,8 +111,16 @@ nav {
             display: flex;
             & > ul {
                 display: flex;
-
+                flex-wrap: initial;
                 li {
+                    a{
+                        white-space: nowrap;
+                    }
+                    margin: 0;
+                    padding: var(--unit);
+                    width: initial;
+                    font-weight: initial;
+                    text-transform: initial;
                     &:first-child {
                         padding-left: var(--unit);
                     }
