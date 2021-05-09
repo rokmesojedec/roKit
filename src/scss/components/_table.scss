@@ -8,7 +8,6 @@ table {
     th,
     td {
         padding: 0.625em;
-        text-align: center;
     }
     th {
         font-size: var(--base-font-size);
@@ -19,9 +18,15 @@ table {
         tr th:first-child {
             font-size: var(--base-font-size);
             text-transform: uppercase;
-            text-align: center;
             font-weight: bold;
         }
+    }
+
+    caption {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: calc(var(--unit) * 2);
+        @extend h3;
     }
 }
 
@@ -37,26 +42,29 @@ table {
             tr th:first-child {
                 font-size: calc(var(--unit) * 2);
                 text-transform: uppercase;
-                text-align: center;
+                text-align: right;
                 font-weight: bold;
                 display: block;
             }
         }
 
-        tr {
+        &:not(.hide-label) tr {
             display: block;
             margin-bottom: 0.625em;
             td {
                 border-bottom: 1px solid #ddd;
                 display: block;
                 font-size: 0.8em;
-                text-align: center;
+                text-align: right;
                 position: relative;
+                padding-left: 6rem;
                 &::before {
                     content: attr(data-label);
                     font-weight: bold;
                     text-transform: uppercase;
                     position: absolute;
+                    color: black;
+                    font-family: var(--primary-font);
                     left: 0;
                     top: 50%;
                     transform: translateY(-50%);

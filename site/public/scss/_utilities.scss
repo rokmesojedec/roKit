@@ -5,9 +5,7 @@ $directions: (
     "bottom": "b",
 );
 
-$levels: 10;
-
-@for $i from 0 through $levels {
+@for $i from 0 through $utility-levels {
     .children-p-#{$i} > * {
         padding: $unit * $i;
     }
@@ -55,7 +53,7 @@ $levels: 10;
 }
 
 @each $direction, $letter in $directions {
-    @for $i from 0 through $levels {
+    @for $i from 0 through $utility-levels {
         .children-p-#{$letter}-#{$i}  * {
             padding-#{$direction}: $unit * $i;
         }
@@ -72,7 +70,7 @@ $levels: 10;
 }
 
 @include for-each-breakpoint() using ($breakpoint) {
-    @for $i from 0 through $levels {
+    @for $i from 0 through $utility-levels {
         .children-p-#{$breakpoint}-#{$i} > * {
             padding: $unit * $i;
         }
@@ -119,7 +117,7 @@ $levels: 10;
         }
     }
     @each $direction, $letter in $directions {
-        @for $i from 0 through $levels {
+        @for $i from 0 through $utility-levels {
             .p-#{$breakpoint}-#{$letter}-#{$i} {
                 padding-#{$direction}: $unit * $i;
             }
@@ -141,6 +139,12 @@ $levels: 10;
         max-width: $size;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+    .hide-#{$breakpoint} {
+        display: none;
+    }
+    .show-#{$breakpoint} {
+        display: block;
     }
 }
 

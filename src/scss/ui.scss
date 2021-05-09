@@ -1,7 +1,0 @@
-@use "components/jumbo" as jumbo;
-tr td span{
-    display:inline-block
-}
-
-
-@include jumbo.bg-image("../img/Goriska_brda.jpg", "goriska-brda");

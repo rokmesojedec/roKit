@@ -8,7 +8,7 @@ $light-salmon: #ff9770ff;
 $orange-yellow-crayola: #ffd670ff;
 $mindaro: #e9ff70ff;
 //------------------------------------------------------------------------
-$green: rgb(98, 189, 75);
+$green: #62bd4b;
 $black: black;
 $gray: #8f8f8f;
 $dark-transparent: #000000e3;
@@ -60,7 +60,7 @@ $secondary: $light-salmon;
 $secondary-light: mix(white, $secondary, 25%);
 $secondary-dark: darken($secondary, 25%);
 $success: $green;
-$warning: $mindaro;
+$warning: $orange-yellow-crayola;
 $danger: $french-pink;
 $code-color: $dark-blue;
 $overlay-color: color.adjust(map.get($grayscale, "dark"), $alpha: -0.4);;

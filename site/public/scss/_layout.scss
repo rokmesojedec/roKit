@@ -35,7 +35,7 @@
         grid-column-end: span var(--column-count);
     }
  
-    @for $colSpan from 1 through $column-count {
+    @for $colSpan from 1 through $grid-column-count {
         &.grid-col-span-#{$colSpan} {
             & > * {
                 --column-span: #{$colSpan};
@@ -50,7 +50,7 @@
         &.last-cell-#{$breakpoint}-full-width > *:last-child{
             grid-column-end: span var(--column-count);
         }
-        @for $colSpan from 1 through $column-count {
+        @for $colSpan from 1 through $grid-column-count {
             &.grid-#{$breakpoint}-col-span-#{$colSpan} {
                 & > * {
                     --column-span: #{$colSpan};
@@ -68,7 +68,7 @@
         }
     }
 
-    @for $colSpan from 1 through $column-count {
+    @for $colSpan from 1 through $grid-column-count {
         & .col-span-#{$colSpan} {
             --column-span: #{$colSpan};
         }

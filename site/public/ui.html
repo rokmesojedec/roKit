@@ -7,20 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <title>ro:Kit - Responsive Kit</title>
+    <title>UI Components - ro:Kit</title>
     <link rel="stylesheet" href="css/roKit.css">
-    <link rel="stylesheet" href="css/ui.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="font-scale-minor-second 
-             font-scale-sm-major-second 
-             font-scale-xl-minor-third 
+<body class="typescale-minor-second 
+             typescale-sm-major-second 
+             typescale-xl-minor-third 
              children-p-x-sm-10 
              children-p-x-4
              children-p-y-6">
     <header class="p-y-0 slide-down-delay-1 fixed-lg full-width z-3 top white shadow-9">
-        <nav class="nav-flex p-sm-3 p-xs-3 p-md-3 p-lg-0 nav-lg font-scale-minor-second max-width-center-xxl">
+        <nav class="nav-flex p-sm-3 p-xs-3 p-md-3 p-lg-0 nav-lg typescale-minor-second max-width-center-xxl">
             <a href="index.html" class="branding relative">ro:Kit<span class="logo">&#129304;</span></a>
             <ul class=" children-p-sm-1 margin-left-auto">
                 <li><a href="index.html">Home</a>
@@ -31,7 +30,7 @@
                 </li>
                 <li><a href="animations.html">Animations</a>
                     <ul class="white shadow-lg-9">
-                        <li><a href="animations.html#fadein">Fade Ins</a></li>
+                        <li><a href="animations.html#slidein">Slide-In</a></li>
                         <li><a href="animations.html#shadows">Shadows</a></li>
                     </ul>
                 </li>
@@ -45,7 +44,8 @@
                 <li><a href="layout.html">Layout</a>
                     <ul class="white shadow-lg-9">
                         <li><a href="layout.html#breakpoints">Breakpoints</a></li>
-                        <li><a href="layout.html#grid">Grid</a></li>
+                        <li><a href="layout.html#breakpoint-list">Responsive Classes List</a></li>
+                        <li><a href="layout.html#grid">Grid &amp; CSS Box Model</a></li>
                     </ul>
                 </li>
                 <li><a href="ui.html" class="active">UI Components</a>
@@ -58,15 +58,13 @@
                 </li>
                 <li><a href="utilities.html">Utilities</a>
                     <ul class="white shadow-lg-9">
-                        <li><a href="utilities.html#visibility">Visibility</a></li>
-                        <li><a href="utilities.html#whitespace">Whitespace</a></li>
+                        <li><a href="utilities.html#classes">Utility Classes</a></li>
                     </ul>
                 </li>
                 <li><a href="typography.html">Typography</a>
                     <ul class="white shadow-lg-9">
-                        <li><a href="typography.html#scales">Font Scales</a></li>
-                        <li><a href="typography.html#headings">Headings</a></li>
                         <li><a href="typography.html#typefaces">Typefaces</a></li>
+                        <li><a href="typography.html#scales">Type Scales</a></li>
                     </ul>
                 </li>
             </ul>
@@ -76,7 +74,7 @@
         <div class="max-width-center-xxl">
             <div class="grid grid-col-span-12 grid-md-col-span-6 children-slide-down">
                 <div class="col-md-span-12">
-                    <h1 class="slide-left-delay-1 text-shadow-left">ro:Kit Buttons</h1>
+                    <h1 class="text-shadow-left">ro:Kit Buttons</h1>
                     <p>Buttons, buttons, buttons! So many buttons to choose from and they're all so satisfying to click
                         on.</p>
                     <p>Go ahead click on a few. They don't do anything - they're here just for the show.</p>
@@ -132,7 +130,8 @@
             </div>
             <p class="warning shadow-4 p-3 m-x-4 slide-down-delay-7"><strong>Tip:</strong> Hover over the buttons to see the classes used to
                 create them</p>
-            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast">
+            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast text-center">
+                <caption>Button Styles and Colors</caption>
                 <thead>
                     <tr>
                         <th></th>
@@ -187,7 +186,8 @@
                                 class="btn outline text-warning">Warning</button></span></td>
                 </tr>
             </table>
-            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast">
+            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast text-center">
+                <caption>Button Styles and Colors</caption>
                 <thead>
                     <tr>
                         <th></th>
@@ -238,7 +238,8 @@
                     <td><span data-tooltip-bottom="class='btn outline'"><a class="btn outline">Link</a></span></td>
                 </tr>
             </table>
-            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast">
+            <table class="responsive-table-md first-col-heading m-t-4 children-slide-down-fast text-center">
+                <caption>Gradient Background Color Combinations</caption>
                 <thead>
                     <tr>
                         <th></th>
@@ -379,14 +380,13 @@
     <section id="jumbo" class="
                 p-y-8
                 children-p-0
-                
                 shadow-6 
                 relative z-1
                 text-dark
                ">
         <div class="max-width-center-xxl ">
-            <div class="grid grid-col-span-12 children-slide-down">
-                <div class="col-span-12">
+            <div class="grid grid-col-span-12">
+                <div class="col-span-12 children-slide-down">
                     <h1>ro:Kit Jumbo</h1>
                     <p>
                         You want to make something stand out on your website? Use a jumbo!
@@ -414,7 +414,7 @@
 &lt;/div&gt;</code>
                     </p>
                 </div>
-                <div>
+                <div class=" children-slide-up">
                     <h1>How to Use an Image as Jumbo Background</h1>
                     <p>
                         Use <span class="code-inline">bg-image($img-url, $class-name)</span> mixin located
@@ -428,9 +428,9 @@
             </div>
         </div>
     </section>
-    <div class="jumbo slide-left-delay-2 font-scale-minor-third 
-    font-scale-md-major-third 
-    font-scale-xl-perfect-fourth vh-60">
+    <div class="jumbo slide-left-delay-2 typescale-minor-third 
+    typescale-md-major-third 
+    typescale-xl-perfect-fourth vh-60">
         <!-- Optional Overlay -->
         <div class='goriska-brda'></div>
         <div class="overlay overlay-gradient-top"></div>
@@ -528,11 +528,11 @@
         </div>
     </section>
 
-    <footer class="p-y-3 font-scale-minor-second code">
+    <footer class="p-y-3 typescale-minor-second code">
         <div class="max-width-center-xxl">
-            <nav class="p-sm-3 p-xs-3 p-md-3 p-lg-0  font-scale-minor-second max-width-center-xxl nav-flex">
+            <nav class="p-sm-3 p-xs-3 p-md-3 p-lg-0  typescale-minor-second max-width-center-xxl nav-flex">
                 <ul class=" children-p-sm-1 justify-content-space-between text-warning">
-                    <li><a href="index.html" class="active">Home</a>
+                    <li><a href="index.html">Home</a>
                         <ul class="text-light">
                             <li><a href="index.html#intro">Intro</a></li>
                             <li><a href="index.html#howto">How to ?</a></li>
@@ -540,7 +540,7 @@
                     </li>
                     <li><a href="animations.html">Animations</a>
                         <ul class="text-light">
-                            <li><a href="animations.html#fadein">Fade Ins</a></li>
+                            <li><a href="animations.html#slidein">Slide-In</a></li>
                             <li><a href="animations.html#shadows">Shadows</a></li>
                         </ul>
                     </li>
@@ -554,7 +554,8 @@
                     <li><a href="layout.html">Layout</a>
                         <ul class="text-light">
                             <li><a href="layout.html#breakpoints">Breakpoints</a></li>
-                            <li><a href="layout.html#grid">Grid</a></li>
+                            <li><a href="layout.html#breakpoint-list">Responsive Classes List</a></li>
+                            <li><a href="layout.html#grid">Grid &amp; CSS Box Model</a></li>
                         </ul>
                     </li>
                     <li><a href="ui.html" class="active">UI Components</a>
@@ -567,15 +568,13 @@
                     </li>
                     <li><a href="utilities.html">Utilities</a>
                         <ul class="text-light">
-                            <li><a href="utilities.html#visibility">Visibility</a></li>
-                            <li><a href="utilities.html#whitespace">Whitespace</a></li>
+                            <li><a href="utilities.html#classes">Utility Classes</a></li>
                         </ul>
                     </li>
                     <li><a href="typography.html">Typography</a>
                         <ul class="text-light">
-                            <li><a href="typography.html#scales">Font Scales</a></li>
-                            <li><a href="typography.html#headings">Headings</a></li>
                             <li><a href="typography.html#typefaces">Typefaces</a></li>
+                            <li><a href="typography.html#scales">Type Scales</a></li>
                         </ul>
                     </li>
                 </ul>

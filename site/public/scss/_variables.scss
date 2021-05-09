@@ -15,14 +15,17 @@ $base-font-size: 14px;
 $unit: 0.75rem;
 $layout-margin: 0;
 $layout-padding: $unit;
-$column-count: 12;
 $grid-column-count: 12;
 
-// Shadow Variables
+// Default Shadow Variables
 //-----------------------------------------------------------------------//
 
 $shadow-scale: 1.414;
+$base-size: 1px;
+$base-strength: 0.1;
+$base-blur: 1.5;
 $shadow-levels: 10;
+$box-shadow-length: 0.4rem;
 
 // Gradient Variables
 //-----------------------------------------------------------------------//
@@ -33,10 +36,17 @@ $default-gradient-rotation: 33deg;
 //-----------------------------------------------------------------------//
 
 $animation-delay-steps: 12;
-$animation-base-length: 0.5s; // must be in seconds
-$animation-fast-delay-multiplier: 0.65;
-$animation-slow-delay-multiplier: 0.45;
-$animation-delay-multiplier: 0.25;
+$animation-base-length: 1s; // must be in seconds
+$animation-fast-delay-multiplier: 0.25;
+$animation-slow-delay-multiplier: 0.65;
+$animation-delay-multiplier: 0.40;
+$animation-translate-distance: 10rem;
+$shadow-animation-length: $animation-base-length;
+
+// Utilities Variables
+//-----------------------------------------------------------------------//
+
+$utility-levels: 10;
 
 // Tooltip Variables
 //-----------------------------------------------------------------------//
@@ -48,11 +58,10 @@ $tooltip-offset: -10px;
 @mixin root-variables(){
     --unit: #{$unit};
     --base-font-size: #{$base-font-size};
-    --grid-column-count: #{$column-count};
     --primary-font: #{$font-stack};
     --heading-font: #{$heading-font-stack};
     --code-font: #{$code-font-stack};
     --layout-margin: #{$layout-margin};
     --layout-padding: #{$layout-padding};
-    --column-count: #{$column-count};
+    --column-count: #{$grid-column-count};
 }

@@ -1,15 +1,8 @@
 @use "scales";
 
-// Default Shadow Variables
-//-----------------------------------------------------------------------//
 
-$shadow-scale: 1.333;
-$base-size: 1px;
-$base-strength: 0.1;
-$base-blur: 1.5;
-$shadow-levels: 10;
 
-@mixin root-shadows($scale: $shadow-scale, $base-size: $base-size, $base-strength: $base-strength, $base-blur: $base-blur){
+@mixin root-shadows($scale: $shadow-scale, $base-size: $base-size, $base-strength: $base-strength, $base-blur: $base-blur, $levels: $shadow-levels){
     --base-shadow-size: #{$base-size};
     --shadow-scale: #{$scale};
     --base-strength-multiplier: #{$base-strength};

@@ -12,11 +12,11 @@
         $percentage: math.floor((($level / (($animation-length / 1s) + $level))) * 100%);
         from {
             @include map-to-rules($startRuleMap);
-            animation-timing-function: ease-in;
+            animation-timing-function: cubic-bezier(0.6, 0.045, 0.355, 1);
         }
         #{$percentage} {
             @include map-to-rules($startRuleMap);
-            animation-timing-function: ease-out;
+            animation-timing-function: cubic-bezier(0.6, 0.045, 0.355, 1);
         }
         to {
             @include map-to-rules($endRuleMap);
@@ -55,6 +55,4 @@
             opacity: 0;
         }
     }
-    
-    
 }

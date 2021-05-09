@@ -1,5 +1,5 @@
 @use "components/scales";
-@import "components/fontscale";
+@import "components/typescale";
 
 $heading-shadow-class-name: "text-shadow-left";
 
@@ -62,7 +62,7 @@ $font-weights: 100, 300, 400, 500, 700;
 @include typography-rules();
 
 @each $scale, $value in scales.$map {
-    .font-scale-#{$scale} {
+    .typescale-#{$scale} {
         @include root-typography($value);
     }
 }
@@ -86,7 +86,7 @@ $text-alignments: "left", "right", "center", "justify";
 
 @include for-each-breakpoint() using ($breakpoint) {
     @each $scale, $value in scales.$map {
-        .font-scale-#{$breakpoint}-#{$scale} {
+        .typescale-#{$breakpoint}-#{$scale} {
             @include root-typography($value);
         }
     }
