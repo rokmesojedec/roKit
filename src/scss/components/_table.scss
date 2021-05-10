@@ -1,3 +1,6 @@
+//https://codepen.io/AllThingsSmitty/pen/MyqmdM
+//Code was modified from above source 
+
 table {
     border-collapse: collapse;
     margin: 0;
@@ -25,7 +28,7 @@ table {
     caption {
         text-align: center;
         font-weight: bold;
-        margin-bottom: calc(var(--unit) * 2);
+        margin-bottom: $unit * 2;
         @extend h3;
     }
 }

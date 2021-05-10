@@ -82,7 +82,8 @@
 
 /* Source: https://getbootstrap.com/docs/5.0/layout/breakpoints/         */
 .card {
-  padding: var(--unit);
+  padding: 0;
+  margin: 0;
 }
 .card h1, .card h2, .card h3, .card table caption, table .card caption, .card h4, .card h5, .card h6 {
   padding: 0 var(--unit);
@@ -96,6 +97,24 @@
   display: flex;
   align-items: center;
   height: 100%;
+}
+.card.rounded {
+  border-radius: var(--unit);
+}
+.card.rounded .head {
+  border-radius: var(--unit) var(--unit) 0 0;
+}
+.card .head, .card .body {
+  padding: var(--unit);
+  margin: 0;
+}
+.card .head h1, .card .head h2, .card .head h3, .card .head table caption, table .card .head caption, .card .head h4, .card .head h5, .card .head h6, .card .body h1, .card .body h2, .card .body h3, .card .body table caption, table .card .body caption, .card .body h4, .card .body h5, .card .body h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+.card .head {
+  background-color: var(--gray-2-color);
 }
 
 table {
@@ -121,7 +140,7 @@ table.first-col-heading tr th:first-child {
 table caption {
   text-align: center;
   font-weight: bold;
-  margin-bottom: calc(var(--unit) * 2);
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 576px) {
@@ -16005,6 +16024,11 @@ header, section, article, aside, footer, nav, div, p, footer {
   padding: var(--layout-padding);
 }
 
+ul.no-bullets {
+  list-style: none;
+  padding: 0;
+}
+
 .shadow-1, .children-shadow-1 > * {
   --primary-x-offset: var(--shadow1);
   --primary-blur: calc(var(--shadow1) * var(--shadow1-blur-multiplier));
@@ -18155,6 +18179,7 @@ h6 {
 
 .no-background {
   background: none;
+  background-color: transparent;
 }
 
 .white {
@@ -25574,5 +25599,3 @@ p, div, section, header, footer, nav {
     text-align: justify;
   }
 }
-
-/*# sourceMappingURL=roKit.css.map */

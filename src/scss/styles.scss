@@ -8,6 +8,9 @@ tr td span{
 }
 
 @include jumbo.bg-image("../img/Goriska_brda.jpg", "goriska-brda");
+.example-img {
+    width: 100%;
+}
 
 @media (max-width: brp.$sm) {
     .main-jumbo {
@@ -19,8 +22,13 @@ tr td span{
 }
 
 .gradients{
-    color: rgb(29, 29, 29);
-    text-shadow:1px 1px rgb(182, 182, 182), -1px -1px 2px rgb(182, 182, 182);
+    $outline-color: rgba(255, 255, 255, 0.623);
+    color: black;
+    text-shadow:
+    -1px -1px 0 $outline-color,  
+     1px -1px 0 $outline-color,
+     -1px 1px 0 $outline-color,
+      1px 1px 0 $outline-color;
     font-weight: bold;
 }
 

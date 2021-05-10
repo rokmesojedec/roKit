@@ -48,6 +48,13 @@ header, section, article, aside, footer, nav, div, p, footer {
     padding: var(--layout-padding);
 }
 
+ul {
+    &.no-bullets {
+        list-style: none;
+        padding: 0;
+    }
+}
+
 @include shadow-scales($shadow-scale, $shadow-levels);
 @include utility-shadow("box-shadow",  "box", #0000001f, $box-shadow-length);
 @include utility-shadow("text-shadow", "text");
