@@ -27,6 +27,7 @@
     }
 }
 
+// creates animations for dealyed fade in sequences
 @mixin animation-series($name, $startRuleMap, $endRuleMap, $levels: 20, $animation-length: 0.4s, $delay-increment: 0.3){
     @for $i from 0 through $levels {
        @include animation-step($name, $startRuleMap, $endRuleMap, $i, $animation-length, $delay-increment);
@@ -38,21 +39,22 @@
             }
         }
     }
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 100;
-        }
-    }
+}
 
-    @keyframes fade-out {
-        from {
-            opacity: 100%;
-        }
-        to {
-            opacity: 0;
-        }
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0;
     }
 }

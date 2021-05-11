@@ -5,6 +5,10 @@ $directions: (
     "bottom": "b",
 );
 
+
+// Padding & Margin Utilties 
+/////////////////////////////////////////////////////
+
 @for $i from 0 through $utility-levels {
     .children-p-#{$i} > * {
         padding: $unit * $i;
@@ -128,6 +132,9 @@ $directions: (
     }
 }
 
+// Misc Utilties 
+/////////////////////////////////////////////////////
+
 @for $i from  0 through 100 {
     .vh-#{$i}{
         height: #{$i}vh;
@@ -202,4 +209,13 @@ $directions: (
 .justify-content-space-between{
     display: flex;
     justify-content: space-between;
+}
+
+
+.rounded{
+    border-radius: var(--unit);
+}
+
+.children-rounded > * {
+    border-radius: var(--unit);
 }
